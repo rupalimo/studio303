@@ -107,6 +107,12 @@ text-transform: capitalize;
 	background: var(--yellow1);
 }
 
+.home {
+	/* background-image: url("logo-1.svg"); */
+	 background-repeat: no-repeat;
+	  background-position: center;
+}
+
 .home a {
 	text-decoration: none;
 }
