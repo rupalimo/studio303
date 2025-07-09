@@ -1,0 +1,122 @@
+@import 'fonts.css';
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+:root {
+	--title-font: 'Iowan Old Style', serif;
+	--body-font: 'Barlow', sans-serif;
+	--menu-font: 'Arial', sans-serif;
+	--filter-font: 'Fahk', sans-serif;
+	--category-font: 'VG500', monospace;
+	--font-size-sm: clamp(0.5rem, 0.45vi + 0.39rem, 0.75rem);
+	--black: #0F0F0F;
+	--grey1: #8C8C8C;
+	--grey2: #B0B0B0;
+	--white: #FFFFFF;
+
+
+	--fade-in-effect: fadeIn 1s;
+	--font-size-sm: clamp(0.5rem, 0.45vi + 0.39rem, 0.75rem);
+	font-size: 16px;
+	font-family: var(--project-title-font);
+	color: var(--text-color);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+* {
+	-webkit-text-size-adjust: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	scroll-behavior: smooth;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	text-rendering: optimizeLegibility;
+}
+
+::selection {
+	background: var(--black);
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+}
+
+
+.demo a {
+	display: block;
+}
+
+.layout {
+	width: 100vw;
+	height: 100vh;
+	margin: 0 auto;
+}
+
+.top-menu-nav {
+ display: flex;
+ flex-direction: row;
+ 	margin: 1rem;
+	flex-flow: row wrap;
+}
+
+
+.top-menu-nav article {
+	width: calc(100% / 8);
+	padding: 0.5rem;
+}
+
+.top-menu-nav h1 {
+	margin: 0;
+	font-size: 1rem;
+	font-weight: 400;
+	font-weight: normal;
+}
+
+.top-menu-nav ul {
+	list-style: none;
+	padding: 0;
+	border-top: 1px solid var(--black);
+	margin: 0.5rem 0;
+}
+
+.top-menu-nav ul li:first-of-type {
+	padding-top: 0.5rem;
+}
+
+.lang a:first-child::after {
+  color: var(--black);
+  content: '/';
+  margin: 0 .25rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a {
+	cursor: pointer;
+  color: var(--black);
+}
+
+@media (max-width: 1240px) {
+}
+
+@media (max-width: 780px) {
+}
+
+@media (max-width: 640px) {
+}
