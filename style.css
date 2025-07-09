@@ -10,22 +10,20 @@
 }
 
 :root {
-	--title-font: 'Iowan Old Style', serif;
-	--body-font: 'Barlow', sans-serif;
-	--menu-font: 'Arial', sans-serif;
-	--filter-font: 'Fahk', sans-serif;
-	--category-font: 'VG500', monospace;
+	--menu: 'Roboto Flex', sans-serif;
+	--body: 'Roboto', sans-serif;
+	--filter: 'Roboto Mono', serif;
+	--category-font: '', monospace;
 	--font-size-sm: clamp(0.5rem, 0.45vi + 0.39rem, 0.75rem);
-	--black: #0F0F0F;
-	--grey1: #8C8C8C;
-	--grey2: #B0B0B0;
-	--white: #FFFFFF;
-
-
+	--black: #0f0f0f;
+	--grey1: #8c8c8c;
+	--grey2: #b0b0b0;
+	--white: #ffffff;
+	--yellow1: #FFF200;
 	--fade-in-effect: fadeIn 1s;
 	--font-size-sm: clamp(0.5rem, 0.45vi + 0.39rem, 0.75rem);
 	font-size: 16px;
-	font-family: var(--project-title-font);
+	font-family: var(--body-font);
 	color: var(--text-color);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -57,7 +55,6 @@ body {
 	height: 100vh;
 }
 
-
 .demo a {
 	display: block;
 }
@@ -69,47 +66,84 @@ body {
 }
 
 .top-menu-nav {
- display: flex;
- flex-direction: row;
- 	margin: 1rem;
+	display: flex;
+	flex-direction: row;
+	margin: 1rem;
 	flex-flow: row wrap;
+	font-family: var(--menu);
 }
 
-
-.top-menu-nav article {
+.top-menu-nav article, .top-menu-nav details {
 	width: calc(100% / 8);
-	padding: 0.5rem;
+	padding: 1rem;
 }
 
 .top-menu-nav h1 {
 	margin: 0;
 	font-size: 1rem;
+	/* font-size: 1.25rem; */
 	font-weight: 400;
 	font-weight: normal;
+	/* font-family: var(--filter); */
+}
+
+.top-menu-nav article + article h1:not(.lang h1) {
+	font-weight: bold;
+	font-size: 1rem;
+	
 }
 
 .top-menu-nav ul {
 	list-style: none;
 	padding: 0;
-	border-top: 1px solid var(--black);
 	margin: 0.5rem 0;
 }
 
-.top-menu-nav ul li:first-of-type {
-	padding-top: 0.5rem;
+.top-menu-nav li::first-letter, .top-menu-nav article + article h1::first-letter {
+text-transform: capitalize;
+}
+
+.top-menu-nav li:hover {
+	background: var(--yellow1);
+}
+
+.home a {
+	text-decoration: none;
+}
+
+.home span {
+	display: inline-flex;
+}
+
+.home h1 + h1 {
+	font-weight: bold;
+	dext
+}
+
+.nested-menu {
+	cursor: pointer;
+}
+
+.lang a:first-child {
+font-weight: bold;
 }
 
 .lang a:first-child::after {
-  color: var(--black);
-  content: '/';
-  margin: 0 .25rem;
-  text-decoration: none;
-  display: inline-block;
+	color: var(--black);
+	content: '/';
+	margin: 0 0.25rem;
+	text-decoration: none;
+	display: inline-block;
+	font-weight: normal;
+}
+
+.lang a + a {
+	color: var(--grey1);
 }
 
 a {
 	cursor: pointer;
-  color: var(--black);
+	color: var(--black);
 }
 
 @media (max-width: 1240px) {
