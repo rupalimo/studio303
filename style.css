@@ -19,7 +19,18 @@
 	--grey1: #8c8c8c;
 	--grey2: #b0b0b0;
 	--white: #ffffff;
-	--yellow1: #FFF200;
+	--yellow1: #fff200;
+	--yellow2: #fff98b;
+	--yellow3: #eee986;
+	--green1: #a6ff00;
+	--green2: #deffa0;
+	--green3: #d3f19c;
+	--blue1: #57fff4;
+	--blue2: #b9fffa;
+	--blue3: #5ce3fb;
+	--orange1: #ffa126;
+	--orange2: #ffba66;
+	--orange3: #ebaa5c;
 	--fade-in-effect: fadeIn 1s;
 	--font-size-sm: clamp(0.5rem, 0.45vi + 0.39rem, 0.75rem);
 	font-size: 16px;
@@ -59,6 +70,8 @@ body {
 	display: block;
 }
 
+/* top menu variation 01 */
+
 .layout {
 	width: 100vw;
 	height: 100vh;
@@ -73,7 +86,8 @@ body {
 	font-family: var(--menu);
 }
 
-.top-menu-nav article, .top-menu-nav details {
+.top-menu-nav article,
+.top-menu-nav details {
 	width: calc(100% / 8);
 	padding: 1rem;
 }
@@ -90,7 +104,6 @@ body {
 .top-menu-nav article + article h1:not(.lang h1) {
 	font-weight: bold;
 	font-size: 1rem;
-	
 }
 
 .top-menu-nav ul {
@@ -99,8 +112,9 @@ body {
 	margin: 0.5rem 0;
 }
 
-.top-menu-nav li::first-letter, .top-menu-nav article + article h1::first-letter {
-text-transform: capitalize;
+.top-menu-nav li::first-letter,
+.top-menu-nav article + article h1::first-letter {
+	text-transform: capitalize;
 }
 
 .top-menu-nav li:hover {
@@ -109,8 +123,8 @@ text-transform: capitalize;
 
 .home {
 	/* background-image: url("logo-1.svg"); */
-	 background-repeat: no-repeat;
-	  background-position: center;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .home a {
@@ -123,7 +137,6 @@ text-transform: capitalize;
 
 .home h1 + h1 {
 	font-weight: bold;
-	dext
 }
 
 .nested-menu {
@@ -131,7 +144,7 @@ text-transform: capitalize;
 }
 
 .lang a:first-child {
-font-weight: bold;
+	font-weight: bold;
 }
 
 .lang a:first-child::after {
@@ -150,6 +163,159 @@ font-weight: bold;
 a {
 	cursor: pointer;
 	color: var(--black);
+}
+
+/* landing  page */
+
+.landing-menu {
+	margin: 1rem;
+	display: flex;
+	flex-direction: column;
+	/* justify-content: space-between;
+	height: 100%; */
+}
+
+.landing-page .landing-menu span {
+	font-family: var(--body);
+	font-weight: normal;
+}
+
+.landing-page .landing-menu h1,
+.landing-page .landing-menu a {
+	display: inline;
+	font-size: 5rem;
+}
+
+.landing-page .landing-menu h1 {
+	text-transform: uppercase;
+	font-weight: normal;
+	padding-right: 2rem;
+}
+
+.landing-page .landing-menu a {
+	font-weight: 200;
+	margin-left: -4px;
+	padding: 0 2rem;
+}
+
+.landing-page .landing-menu a + a {
+	border-left: 1px solid var(--black);
+}
+
+.landing-page .landing-menu span:nth-child(1) h1 {
+	background: var(--yellow1);
+}
+
+.landing-page .landing-menu span:nth-child(1) a {
+	background-image: var(--yellow2);
+	/* background: #ffffff;
+	background: linear-gradient(
+		90deg,
+		rgba(255, 255, 255, 1) 0%,
+		rgba(255, 249, 139, 1) 90%,
+		rgba(255, 242, 0, 1) 100%
+	); */
+}
+
+.landing-page .landing-menu span:nth-child(1) a {
+	background: var(--yellow2);
+}
+
+.landing-page .landing-menu span:nth-child(2) h1 {
+	background: var(--green1);
+}
+
+.landing-page .landing-menu span:nth-child(2) a {
+	background: var(--green2);
+	/* background: #ffffff;
+	background: linear-gradient(
+		90deg,
+		rgba(255, 255, 255, 1) 0%,
+		rgba(222, 255, 160, 1) 90%,
+		rgba(166, 255, 0, 1) 100%
+	); */
+}
+
+.landing-page .landing-menu span:nth-child(3) h1 {
+	background: var(--blue1);
+}
+
+.landing-page .landing-menu span:nth-child(3) a {
+	background: var(--blue2);
+}
+
+.landing-page .landing-menu span:nth-child(4) h1 {
+	background: var(--orange1);
+}
+
+.landing-page .landing-menu span:nth-child(4) a {
+	background: var(--orange2);
+}
+
+.landing-page2 {
+	height: 100vh;
+	width: 100vw;
+	/* background-image: url('logo-1.svg'); */
+}
+
+.landing-page2 .landing-menu {
+	font-size: 4rem;
+	margin: 1rem 0;
+}
+
+.landing-page2 .landing-menu span {
+	/* margin: 1rem 0; */
+	padding: 1rem;
+	width: 100%;
+	font-family: var(--body);
+	display: grid;
+	grid-template-columns: min-content auto;
+}
+
+.landing-page2 .landing-menu h1 {
+	color: #000;
+	font-size: 8rem;
+	grid-column: 1;
+	padding-right: 2rem;
+}
+
+.landing-page2 .landing-menu h1::first-letter {
+	text-transform: uppercase;
+}
+
+.landing-page2 .landing-menu a {
+	font-size: calc(0.5em + 0.5vw);
+	border: 1px solid var(--black);
+	padding: 0 1rem 0.25rem 1rem;
+	width: fit-content;
+	box-shadow: var(--black) 0px 0px 2px 6px inset;
+	box-shadow: var(--black) 0px 0px 4px 0px inset;
+	border-radius: 2px;
+	background: var(--white);
+}
+
+.landing-page2 .landing-menu a:hover {
+	background-color: var(--green1);
+}
+
+.landing-page2 .landing-menu a:nth-of-type(even) {
+	margin-left: 1.5rem;
+}
+
+.landing-page2 .landing-menu a + a {
+	/* margin-left: -1px; */
+	margin-top: -1px;
+}
+
+.landing-page2 .landing-menu div {
+	grid-column: 2;
+	display: flex;
+	flex-direction: column;
+}
+
+.landing-page2 .landing-menu h1,
+.landing-page2 .landing-menu a {
+	margin: 0;
 }
 
 @media (max-width: 1240px) {
