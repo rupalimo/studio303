@@ -1,4 +1,17 @@
-@import 'fonts.css';
+@font-face {
+	font-family: "RobotoCon-Thin";
+	src: url(fonts/RobotoCondensed-Thin.ttf);
+}
+
+@font-face {
+	font-family: "RobotoCon-Reg";
+	src: url(fonts/RobotoCondensed-Regular.ttf);
+}
+
+@font-face {
+	font-family: "RobotoCon-Med";
+	src: url(fonts/RobotoCondensed-Medium.ttf);
+}
 
 @keyframes fadeIn {
 	from {
@@ -13,7 +26,8 @@
 	--menu: 'Roboto Flex', sans-serif;
 	--body: 'Roboto', sans-serif;
 	--filter: 'Roboto Mono', serif;
-	--schedule: 'Roboto Condensed', 'Arial Narrow', serif;
+	--schedule1: 'RobotoCon-Thin', 'Arial Narrow', serif;
+		--schedule2: 'RobotoCon-Reg', 'Arial Narrow', serif;
 	--font-size-sm: clamp(0.5rem, 0.45vi + 0.39rem, 0.75rem);
 	--black: #0f0f0f;
 	--grey1: #8c8c8c;
@@ -479,7 +493,6 @@ a {
 	padding: 4px 1rem;
 	border: 1px solid var(--yellow1);
 	border-style: solid none;
-	background: var(--yellow3);
 }
 
 .landing-page3 footer .footer-banner,
@@ -496,17 +509,19 @@ a {
 	font-weight: 200;
 }
 
-.landing-page3 footer .schedule {
-	font-family: var(--schedule);
+.landing-page3 footer .schedule p:first-of-type {
+	font-family: var(--schedule2);
+}
+
+.landing-page3 footer .schedule p + p {
+	font-family: var(--body);
+	text-transform: uppercase;
+		margin-left: 0.35rem;
+	font-weight: 200;
 }
 
 .landing-page3 footer p {
 	margin: 0;
-}
-
-.landing-page3 footer .schedule p + p {
-	margin-left: 0.25rem;
-	font-weight: 200;
 }
 
 @media (max-width: 1240px) {
