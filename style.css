@@ -381,7 +381,7 @@ a {
 }
 
 .landing-page3 .landing-menu span {
-	padding: 2rem 1rem;
+	padding: 1rem;
 	width: 100%;
 	font-family: var(--body);
 	display: grid;
@@ -389,7 +389,7 @@ a {
 }
 
 .landing-page3 .landing-menu h1 {
-	font-size: calc(6rem +  1vw);
+	font-size: calc(4rem +  1vw);
 	padding: 0.25rem 2rem;
 	cursor: pointer;
 	transition: linear 0.25s;
@@ -397,6 +397,9 @@ a {
 	color: var(--black);
 	-webkit-text-stroke-width: 0.55rem;
 	text-transform: uppercase;
+	letter-spacing: 2px;
+	width: max-content;
+
 }
 
 .landing-page3 .landing-menu h1:hover {
@@ -432,7 +435,7 @@ a {
 } 
 
 .landing-page3 .landing-menu a {
-	font-size: calc(0.85rem + 1vw);
+	font-size: calc(1rem + 0.75vw);
 	border: 1px solid var(--grey1);
 	padding: 0 1rem 0.25rem 1rem;
 	width: fit-content;
@@ -463,10 +466,29 @@ a {
 }
 
 @media (max-width: 1240px) {
+
+	.landing-page3 .landing-menu span {
+		display: grid;
+		grid-template-rows: min-content 1fr;
+		grid-template-columns: 1fr;
+	}
+
+	.landing-page3 .landing-menu h1, 	.landing-page3 .landing-menu div {
+		align-content: center;
+		margin: 0 auto;
+	}
 }
 
 @media (max-width: 780px) {
 }
 
 @media (max-width: 640px) {
+	.landing-page3 .landing-menu h1 wb {
+		word-break: break-all;
+		display: block;
+	}
+
+	.landing-page3 .landing-menu h1 wb::before {
+	content: "-";
+	}
 }
