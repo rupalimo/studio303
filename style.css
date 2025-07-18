@@ -685,7 +685,24 @@ top-menu2 footer {
 }
 
 @media (max-width: 980px) {
-	.top-menu2 .top-menu-nav div 
+	.top-menu2 .top-menu-nav div {}
+
+	.landing-page3 .top-menu-nav .tag, .landing-page3 .top-menu-nav .hours {
+		display: none;
+	}
+
+	.landing-page3 .top-menu-nav .nav-btn {
+		grid-column: 7/9;
+		justify-content: flex-end;
+	}
+
+	.landing-page3 .top-menu-nav .nav-btn .lang  {
+		margin-left: 2rem;
+	}
+
+	.landing-page3 .landing-menu {
+		margin: 1rem 0;
+	}
 }
 
 @media (max-width: 640px) {
