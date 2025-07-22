@@ -282,7 +282,7 @@ a {
 	width: calc(100% / 3 * 2);
 }
 
-.top-menu2 main .scroll-col .highlighted-header {
+.top-menu2 main .scroll-col .highlighted-header, .top-menu2 main .scroll-col2  .highlighted-header {
 	background: var(--yellow1);
 	width: fit-content;
 	color: var(--grey1);
@@ -296,6 +296,7 @@ a {
 	font-weight: 400;
 	font-size: 2rem;
 }
+
 
 /* landing  page */
 
@@ -838,6 +839,35 @@ margin: 0 0.25rem 0 0;
 
 .section-page .card__wrapper .card__item .card--categories li::before {
 	content:"#";
+}
+
+/* se former styling */
+
+.top-menu2 .left-nav-col h3 {
+font-family: var(--schedule2);
+	margin: 0;
+}
+
+.top-menu2 .left-nav-col button {
+	border: 1px solid var(--yellow1);
+	height: 12rem;
+	width: calc(100% - 1rem);
+	box-shadow: var(--yellow3) 0 0 24px 12px inset;
+	background: var(--white);
+}
+
+.top-menu2 .left-nav-col button:nth-of-type(1) {
+	margin-top: 1rem;
+		border-radius: 100%;
+}
+
+.top-menu2 main .scroll-col2 {
+	width: calc(100% / 6 * 5);
+}
+
+.top-menu2 main .scroll-col2 img {
+	width: 100%;
+	margin: 1rem 0;
 }
 
 @media (max-width: 1240px) {
