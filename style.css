@@ -863,18 +863,22 @@ top-menu2 footer {
 
 /* se former styling */
 
-.top-menu2 .scroll-col .scroll--dates {
+.top-menu2 .scroll-col {
+	position: relative;
+}
+.top-menu2 .scroll-col .scroll__nav {
+	margin: 2rem 0 0 0;
+}
+
+.top-menu2 .scroll-col .scroll--dates,
+.top-menu2 .scroll-col .scroll--titles {
 	display: flex;
 	flex-direction: row;
 	width: 100%;
-		justify-content: space-between;
-	margin: 2rem 0 0 0;
-	
 }
 
 .top-menu2 .scroll-col .scroll--dates h3 {
 	font-family: var(--schedule1);
-	
 }
 
 .top-menu2 .scroll-col .scroll--titles h3 {
@@ -882,56 +886,57 @@ top-menu2 footer {
 }
 
 .top-menu2 .scroll-col .scroll--titles h3 + h3::before {
-content:"with";
-margin-right: 0.5rem;
-
+	content: 'with ';
+	margin-left: 0.5rem;
 }
 
 .top-menu2 .scroll-col h3 {
 	margin: 0;
 	font-size: 2rem;
-
 }
 
 .top-menu2 .scroll-col .scroll--buttons {
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: flex-end;
-	margin-bottom: 1rem;
+	margin: 1rem 0 0 0;
+	position: sticky;
+	top: 4rem;
 }
 
 .top-menu2 .scroll-col .scroll--buttons button {
 	border: 1px solid var(--yellow1);
-
-	width: 50%;
 	box-shadow: var(--white) 0 0 4px 2px inset;
-	background: var(--white);
+	background: rgba(255, 255, 255, 0.498);
 	cursor: pointer;
 	font-family: var(--body);
 	font-size: 1rem;
+	width: calc(50% + 1px);
 }
 
 .top-menu2 .scroll-col .scroll--buttons button:nth-of-type(1) {
-/* background: var(--yellow2); */
+	position: sticky;
+	top: 4rem;
 }
 
 .top-menu2 .scroll-col .scroll--buttons button:nth-of-type(2) {
-	margin-left: -2px;
-	/* background: var(--yellow2); */
+	margin-left: -1px;
 }
 
 .top-menu2 .scroll-col .scroll--buttons button:hover {
-	/* box-shadow: var(--yellow1) 0 0 4px 2px inset; */
-background:  var(--yellow1);
+
+	background: var(--yellow1);
 }
+
 .top-menu2 main .scroll-col figure {
 	margin: 0 0 1rem 0;
 }
 
 .top-menu2 main .scroll-col img {
 	width: 100%;
-	margin-top: 1rem;
+	height: auto;
+	/* border: 1px solid var(--yellow1); */
+	margin-top: 0.5rem;
+
 }
 
 .top-menu2 main .scroll-col figcaption {
