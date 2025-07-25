@@ -863,14 +863,34 @@ top-menu2 footer {
 
 /* se former styling */
 
-.top-menu2 .scroll-col h3 {
-	font-family: var(--schedule2);
-	margin: 0;
+.top-menu2 .scroll-col .scroll--dates {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+		justify-content: space-between;
+	margin: 2rem 0 0 0;
+	
 }
 
-.scroll__nav {
-	display: grid;
-	grid-template-columns: 50% 50%;
+.top-menu2 .scroll-col .scroll--dates h3 {
+	font-family: var(--schedule1);
+	
+}
+
+.top-menu2 .scroll-col .scroll--titles h3 {
+	font-family: var(--schedule2);
+}
+
+.top-menu2 .scroll-col .scroll--titles h3 + h3::before {
+content:"with";
+margin-right: 0.5rem;
+
+}
+
+.top-menu2 .scroll-col h3 {
+	margin: 0;
+	font-size: 2rem;
+
 }
 
 .top-menu2 .scroll-col .scroll--buttons {
@@ -882,8 +902,8 @@ top-menu2 footer {
 }
 
 .top-menu2 .scroll-col .scroll--buttons button {
-	border: 2px solid var(--yellow1);
-	height: 2rem;
+	border: 1px solid var(--yellow1);
+
 	width: 50%;
 	box-shadow: var(--white) 0 0 4px 2px inset;
 	background: var(--white);
