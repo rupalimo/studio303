@@ -251,17 +251,18 @@ a {
 .top-menu2 main .scroll-col h2 {
 	margin: 2rem 0 1rem 0;
 	font-weight: 400;
-	font-size: 2rem;
+	font-size: calc(1.25rem + 1vw);
+}
+.scroll-col p,
+.scroll-col ul {
+	font-size: calc(0.75rem + 0.25vw);
 }
 
 /* landing  page */
 
 .landing-menu {
-	margin: 1rem;
 	display: flex;
 	flex-direction: column;
-	/* justify-content: space-between;
-	height: 100%; */
 }
 
 .landing-page .landing-menu span {
@@ -425,61 +426,39 @@ a {
 	width: 100vw;
 }
 
-.landing-page3 .top-menu-nav {
-	display: grid;
-	grid-template-columns: repeat(8, 1fr);
+.landing-page3.top-menu2 .nested-menu article,
+.landing-page3.top-menu2 .secondary-menu article:nth-last-of-type(1) {
+	display: none;
 }
 
-.landing-page3 .top-menu-nav .home {
-	display: flex;
-	flex-direction: row;
+.landing-page3.top-menu2 .top-menu-nav .nested-menu {
+	justify-content: space-evenly;
 }
 
-.landing-page3 .top-menu-nav .home h1 {
-	font-size: 1.25rem;
+.landing-page3.top-menu2 .nested-menu::before {
+	content: 'Soutien aux artistes en danse et performance indisciplinees a montreal depuis 1989.';
+	width: 30%;
+	min-width: 350px;
 }
 
-.landing-page3 .top-menu-nav .tag {
-	grid-column: 2/4;
+.landing-page3.top-menu2 .nested-menu::after {
+	content: 'Lundi - Vendredi 9:00 - 16:00h Tiohtià:ke / Montreal';
+	width: 20%;
+	min-width: 250px;
 }
 
-.landing-page3 .top-menu-nav .hours {
-	grid-column: 5/7;
-}
-
-.landing-page3 .top-menu-nav .nav-btn {
-	grid-column: 8;
-	justify-content: space-between;
-}
-
-.landing-page3 .top-menu-nav .lang,
-.landing-page3 .top-menu-nav .nav-btn {
-	display: flex;
-	flex-direction: row;
-}
-
-.landing-page3 .top-menu-nav .nav-btn .calender,
-.landing-page3 .top-menu-nav .lang h1:nth-of-type(3) {
-	text-decoration: underline;
-	text-underline-offset: 3px;
-}
-
-.landing-page3 .top-menu-nav .lang h1:nth-of-type(2) {
-	margin: 0 0.25rem;
-}
-
-.landing-page3 .top-menu-nav .lang h1:nth-of-type(3) {
-	color: var(--grey2);
+.landing-page3.top-menu2 .top-menu-nav {
+	border-bottom: 1px dotted var(--white);
 }
 
 .landing-page3 .landing-menu {
 	font-size: 4rem;
-	margin: 4rem 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	height: 80vh;
 	justify-content: space-between;
+	width: 100%;
 }
 
 .landing-page3 .landing-menu div {
@@ -738,6 +717,12 @@ top-menu2 footer {
 	border-top: 1px solid var(--colour1);
 	width: 100%;
 }
+
+.section-page .card__wrapper p {
+font-size: calc(0.75rem + 0.25vw);
+}
+
+
 
 .section-page .card__wrapper,
 .section-page .card__wrapper .card__item span,
@@ -1123,11 +1108,9 @@ top-menu2 footer {
 	font-size: 10px;
 }
 
-
 .style-guide__wrapper details summary {
 	cursor: pointer;
 	color: blue;
-
 }
 
 .style-guide__wrapper details div {
@@ -1206,6 +1189,92 @@ top-menu2 footer {
 	text-decoration: none;
 	display: inline-block;
 	font-weight: normal;
+}
+
+.style-guide__wrapper .body__title {
+	font-family: var(--body);
+	color: var(--black);
+	font-size: calc(1.25rem + 1vw);
+	font-weight: 400;
+}
+
+.style-guide__wrapper .body__para {
+	font-family: var(--body);
+	color: var(--black);
+	font-size: calc(0.75rem + 0.25vw);
+}
+
+.style-guide__wrapper .body__para-sm {
+	font-family: var(--body);
+	color: var(--black);
+	font-size: calc(0.6rem + 0.25vw);
+}
+
+.style-guide__wrapper .schedule__title {
+	font-size: calc(1.25rem + 1vw);
+	font-family: var(--schedule2);
+}
+
+.style-guide__wrapper .schedule__date {
+	font-size: calc(1.25rem + 1vw);
+	font-family: var(--schedule1);
+}
+
+.style-guide__wrapper .image-caption {
+	font-family: var(--body);
+	margin: 0;
+	text-align: right;
+	font-size: 0.65rem;
+	color: var(--grey1);
+}
+
+.style-guide__wrapper .section-page__title--desktop {
+	background: var(--colour1);
+	width: fit-content;
+	width: -moz-fit-content;
+	color: var(--black);
+	padding: 0 4px;
+	text-transform: uppercase;
+	margin: 0;
+	font-weight: 400;
+	font-family: var(--body);
+	font-size: 0.85rem;
+}
+
+.style-guide__wrapper .section-page__title--mobile {
+	width: fit-content;
+	width: -moz-fit-content;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 0;
+	color: var(--grey1);
+	background: var(--white);
+	font-weight: 600;
+	font-family: var(--body);
+	font-size: 0.85rem;
+}
+
+.style-guide__wrapper .schedule__title-card {
+	font-family: var(--schedule2);
+}
+
+.style-guide__wrapper .schedule__date-card {
+	font-family: var(--schedule2);
+	font-weight: 200;
+}
+
+.style-guide__wrapper .category  {
+	margin-right: 1rem;
+  color: var(--grey1);
+  border-bottom: 1px solid var(--colour3);
+  font-size: calc(0.6rem + 0.25vw);
+	font-family: var(--body);
+	width: fit-content;
+	width: -moz-fit-content;
+}
+
+.style-guide__wrapper .category::before {
+	content:"#";
 }
 
 @media (max-width: 1240px) {
@@ -1348,6 +1417,7 @@ top-menu2 footer {
 		font-weight: 600;
 		color: var(--grey1);
 		padding: 0;
+		font-size: 0.85rem;
 	}
 
 	.top-menu2 .scroll-col .scroll__nav {
