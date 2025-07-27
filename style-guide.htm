@@ -164,24 +164,36 @@
 				<summary>FORMS</summary>
 				<div>
 					<article>
-						<h1 class="section-page__title">A propos</h1>
-						<pre>text input</pre>
+						<form class="form-input__search">
+							<label for="site-search">Search the site:</label>
+							<input
+								placeholder="Search"
+								type="search"
+								id="site-search"
+								name="search"
+							/>
+							<button>&#10132;</button>
+						</form>
+
+						<pre>text input (w active state)</pre>
 					</article>
 					<article>
 						<a class="filter--button">Filter</a>
-						<ul class="filter--selection">
-							<li></li>
-							<li></li>
-							<li></li>
-						</ul>
+
 						<pre>filter</pre>
 					</article>
 
 					<article>
-						<a class="filter--button_selected"
-							>Filter (<em>Selection1, Selection2, Selection3</em>)</a
-						>
-						<p class="filter--annotation">24 workshops</p>
+						<div class="filter__container">
+							<a class="filter--button">Filter</a>
+							<ul class="filter--selection">
+								<li>Summer</li>
+								<li>Kelly Keenan</li>
+								<li>Fano Maddix</li>
+							</ul>
+							<p class="filter--annotation">24 workshops</p>
+						</div>
+
 						<pre>filter selection</pre>
 					</article>
 				</div>
@@ -190,19 +202,19 @@
 				<summary>LANDING PAGE MENU STYLING</summary>
 				<div>
 					<article>
-						<h1 class="landing-menu__primary">se former</h1>
+						<p class="body__para">Soutien aux artistes en danse et performance indisciplinees a montreal depuis 1989.</p>
 						<pre>top menu text</pre>
 					</article>
 					<article>
 						<h1 class="landing-menu__primary">se former</h1>
-						<pre>primary landing menu</pre>
+						<pre>primary landing menu (w hover)</pre>
 					</article>
 					<article>
 						<div class="landing-menu__secondary">
 							<a>cours tous niveaux</a>
 							<a>ateliers professionels</a>
 						</div>
-						<pre>secondary landing menu</pre>
+						<pre>secondary landing menu (w hover)</pre>
 					</article>
 				</div>
 			</details>
