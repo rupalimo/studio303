@@ -302,7 +302,12 @@ a {
 	font-weight: normal;
 }
 
-.landing-page .landing-menu span:last-of-type {
+.landing-page3 .landing-menu span:last-of-type {
+grid-template-columns: min-content auto;
+
+}
+
+.landing-page3 .landing-menu span:last-of-type h1 {
 	width: max-content;
 }
 
@@ -542,7 +547,8 @@ a {
 .landing-page3 .landing-menu a {
 	font-size: calc(0.85rem + 0.5vw);
 	border: 1px solid var(--grey1);
-	padding: 0.25rem 1rem;
+	/* padding: 0.25rem 1rem; */
+	padding: 0.25rem 3rem;
 	width: fit-content;
 	width: -moz-fit-content;
 	font-family: var(--menu);
@@ -563,6 +569,7 @@ a {
 
 .landing-page3 .landing-menu a:nth-of-type(even) {
 	margin: 0 0.5rem;
+		/* border-radius: 1.5rem; */
 }
 
 .landing-page3 .landing-menu a + a {
