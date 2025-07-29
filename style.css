@@ -28,7 +28,7 @@
 	--filter: 'Roboto Mono', serif;
 	--schedule1: 'RobotoCon-Thin', 'Arial Narrow', serif;
 	--schedule2: 'RobotoCon-Reg', 'Arial Narrow', serif;
-		--schedule3: 'RobotoCon-Med', 'Arial Narrow', serif;
+	--schedule3: 'RobotoCon-Med', 'Arial Narrow', serif;
 	--font-size-sm: clamp(0.5rem, 0.45vi + 0.39rem, 0.75rem);
 	--black: #0f0f0f;
 	--grey1: #8c8c8c;
@@ -494,6 +494,7 @@ a {
 	min-height: 85vh;
 	justify-content: space-between;
 	width: 100%;
+	padding: 0 1rem;
 }
 
 .landing-page3 .landing-menu div {
@@ -575,8 +576,10 @@ a {
 }
 
 .landing-page3 .section__contenu,
-.landing-page3 .section__evenements, .section__voir {
+.landing-page3 .section__evenements,
+.section__voir {
 	width: 100%;
+	margin: 4rem 0 2rem 0;
 }
 
 .landing-page3 .section__contenu .contenu__wrapper {
@@ -584,31 +587,84 @@ a {
 	grid-template-columns: 50% 50%;
 }
 
-.contenu__wrapper figure img {
-	width: 100%;
-	height: auto;
+.landing-page3 .section__contenu,
+.landing-page3 .section__evenements {
+	border: 1px dotted var(--grey2);
+	border-radius: 2px 4rem 2px 8rem;
+
 }
 
-.contenu__wrapper figure, .contenu__wrapper .contenu__text {
+.landing-page3 .section__contenu:hover {
+	border: 1px solid var(--colour2);
+	
+	box-shadow: var(--grey2) 0px 0px 24px 0px;
+	cursor: pointer;
+	transition: linear 0.15s;
+	/* background: var(--colour1); */
+}
+
+.landing-page3 .section__contenu:hover img {
+	border: 1px solid var(--white);
+}
+
+.landing-page3 .section__contenu .highlighted-header {
+	/* margin: 1rem auto 0 auto;
+	text-align: center; */
+	
+}
+
+.contenu__wrapper img {
+	width: 100%;
+	height: auto;
+	border: 1px solid var(--white);
+	border-radius: 2px 2px 2px 7.5rem;
+}
+
+.contenu__wrapper ,
+.contenu__wrapper .contenu__text {
 	padding: 1rem;
 	font-family: var(--body);
 }
 
 .contenu__wrapper .contenu__text span {
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: space-between;
-font-family: var(--schedule2);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	font-family: var(--schedule2);
 }
 
 .contenu__wrapper .contenu__text span:nth-of-type(1) h3 {
-margin: 1rem 0 0.25rem 0;
-font-weight: 200;
+	margin: 1rem 0 0.25rem 0;
+	font-weight: 200;
 }
 
 .contenu__wrapper .contenu__text span:nth-of-type(2) h3 {
 	margin: 0;
+}
+
+.contenu__wrapper .contenu--description p {
+	font-weight: 400;
+	font-size: calc(0.75rem + 0.25vw);
+}
+
+.contenu__wrapper .contenu__text .card--categories {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	list-style: none;
+	padding: 0;
+}
+
+.contenu__wrapper .contenu__text .card--categories li {
+	margin-right: 1rem;
+	color: var(--grey1);
+	font-size: 0.85rem;
+	border-bottom: 1px solid var(--colour3);
+}
+
+.contenu__wrapper .contenu__text .card--categories li::before {
+	content: '#';
 }
 
 .landing-page3 .section__evenements .evenements__wrapper {
@@ -655,17 +711,13 @@ top-menu2 footer {
 }
 
 .sticky-gradient {
-position: fixed;
+	position: fixed;
 	left: 0;
 	bottom: 0;
 	width: 100vw;
-	height: 4px;
+	height: 0.25rem;
 	z-index: 3;
-	background-image: linear-gradient(
-		to bottom,
-		var(--white),
-		var(--colour1)
-	);
+	background-image: linear-gradient(to bottom, var(--white) 1%, var(--colour1));
 	mix-blend-mode: darken;
 }
 
@@ -734,7 +786,7 @@ position: fixed;
 
 .section-page .tabs button:hover {
 	border: 1px solid var(--grey1);
-  color: var(--grey1);
+	color: var(--grey1);
 }
 
 .section-page .tabs button {
@@ -862,11 +914,11 @@ position: fixed;
 	/* background-image: linear-gradient(
 		to bottom,
 		rgba(255, 255, 255) 48%,
-		var(--grey2) 68%,
-		rgba(255, 255, 255)
+		var(--colour3) 68%
 	); */
 	border-bottom: 1px dotted var(--grey2);
-	margin: 2rem 0;
+	margin-top: 2rem;
+	padding: 2rem 0;
 }
 
 .section-page .card__wrapper .card__item {
@@ -1009,7 +1061,6 @@ position: fixed;
 	background: var(--colour1);
 	box-shadow: var(--white) 0 0 4px 1px inset;
 }
-
 
 .top-menu2 main .scroll-col img {
 	width: 100%;
@@ -1480,7 +1531,7 @@ position: fixed;
 
 .style-guide__wrapper .main-page__tab-item:hover {
 	border: 1px solid var(--grey1);
-  color: var(--grey1);
+	color: var(--grey1);
 }
 
 .style-guide__wrapper .main-page__tab-item.active {
