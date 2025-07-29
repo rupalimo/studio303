@@ -1003,6 +1003,7 @@ top-menu2 footer {
 .top-menu2 .footer__wrapper {
 	font-family: var(--body);
 	width: 100%;
+	margin-top: 6rem;
 }
 
 .top-menu2 .footer__wrapper .footer__contact {
