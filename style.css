@@ -792,7 +792,7 @@ top-menu2 footer {
 .section-page .card__wrapper {
 	justify-content: space-between;
 	margin: 1rem 0;
-	border-top: 1px dashed var(--colour1);
+	border-top: 1px solid var(--colour2);
 	width: 100%;
 	padding: 0 1rem;
 }
@@ -881,7 +881,7 @@ top-menu2 footer {
 	margin-right: 1rem;
 	color: var(--grey1);
 	font-size: 0.85rem;
-	border-bottom: 1px solid var(--colour2);
+	border-bottom: 1px solid var(--colour3);
 }
 
 .section-page .card__wrapper .card__item .card--categories li::before {
@@ -1398,7 +1398,7 @@ top-menu2 footer {
 .style-guide__wrapper .category {
 	margin: 0 1rem 0 0;
 	color: var(--grey1);
-	border-bottom: 1px solid var(--colour2);
+	border-bottom: 1px solid var(--colour3);
 	font-size: calc(0.6rem + 0.25vw);
 	font-family: var(--body);
 	width: fit-content;
