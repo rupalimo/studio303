@@ -688,7 +688,8 @@ top-menu2 footer {
 }
 
 .section-page .tabs button:hover {
-	background: var(--colour1);
+	border: 1px solid var(--grey1);
+  color: var(--grey1);
 }
 
 .section-page .tabs button {
@@ -1432,7 +1433,8 @@ top-menu2 footer {
 }
 
 .style-guide__wrapper .main-page__tab-item:hover {
-	background: var(--colour1);
+	border: 1px solid var(--grey1);
+  color: var(--grey1);
 }
 
 .style-guide__wrapper .main-page__tab-item.active {
