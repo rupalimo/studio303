@@ -813,6 +813,70 @@ top-menu2 footer {
 	font-weight: 400;
 }
 
+.section-page .filter__wrapper {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	align-items: baseline;
+	border: 1px var(--colour2);
+	border-style: solid none;
+	padding: 1rem 0;
+}
+
+.section-page .filter__wrapper .filter--select summary {
+	font-family: var(--body);
+	cursor: pointer;
+	display: flex;
+	flex-direction: row;
+}
+
+.section-page .filter__wrapper .filter--select summary a {
+	font-weight: 500;
+	text-decoration: underline;
+	text-underline-offset: 3px;
+	text-decoration-thickness: 2px;
+	margin-right: 0.5rem;
+}
+
+.section-page .filter__wrapper .filter--select summary p {
+	margin: 0;
+}
+
+.section-page .filter__wrapper .filter--select summary p::before {
+	content: "(";
+}
+
+.section-page .filter__wrapper .filter--select summary p::after {
+	content: ")";
+}
+
+.section-page .filter__wrapper .filter--select details > summary {
+	list-style: none;
+}
+
+.section-page .filter__wrapper .filter--select details > summary::marker,
+.section-page
+	.filter__wrapper
+	.filter--select
+	details
+	> summary::-webkit-details-marker {
+	display: none;
+}
+
+.section-page .filter__wrapper .filter--input {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+.section-page .filter__wrapper .filter--input p {
+	margin: 0;
+	font-size: 0.85rem;
+	color: var(--grey1);
+	font-weight: 400;
+	text-align: right;
+}
+
 .section-page .filter {
 	display: grid;
 	grid-template-columns: 50% 50%;
@@ -848,23 +912,23 @@ top-menu2 footer {
 	text-align: right;
 }
 
-.section-page .filter label {
+.section-page .filter__wrapper .filter--input label, .section-page .filter__wrapper .filter--input button {
 	display: none;
 }
 
-.section-page .filter input,
-.section-page .filter button {
+.section-page .filter__wrapper .filter--input input,
+.section-page .filter__wrapper .filter--input button {
 	font-family: var(--body);
 	height: 2rem;
 	font-size: 1rem;
 	padding-left: 0.5rem;
 }
 
-.section-page .filter input {
+.section-page .filter__wrapper .filter--input input {
 	outline: none;
-	border: 1px solid var(--grey2);
-	border-style: solid none solid solid;
-	width: calc(100% - 2rem);
+	border: 1px solid var(--white);
+	border-style: none none solid none;
+	width: auto;
 }
 
 .section-page .filter input[type='search']:focus + button {
@@ -1953,9 +2017,8 @@ details > summary {
 	}
 
 	.top-menu2 main .scroll-col figure img {
-	border-radius: 2px 1rem 2px 5rem;
-}
-
+		border-radius: 2px 1rem 2px 5rem;
+	}
 }
 
 @media (max-width: 640px) {
