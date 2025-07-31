@@ -927,6 +927,7 @@ top-menu2 footer {
 	list-style: none;
 	padding: 0 0.5rem;
 	font-size: calc(0.6rem + 0.25vw);
+		width: 25%;
 }
 
 .section-page .filter__wrapper .filter--select-list ul:not(:last-of-type) {
@@ -937,6 +938,15 @@ top-menu2 footer {
 	margin: 0;
 	font-weight: 200;
 	text-transform: uppercase;
+}
+
+.section-page .filter__wrapper .filter--select-list ul li {
+	cursor: pointer;
+
+}
+
+.section-page .filter__wrapper .filter--select-list ul li:hover {
+	font-weight: 500;
 }
 
 .section-page .filter__wrapper .filter--input form {
