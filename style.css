@@ -863,6 +863,20 @@ top-menu2 footer {
 	display: none;
 }
 
+.section-page .filter__wrapper .filter--select details[open] summary a {
+text-decoration: none;
+/* font-style: italic; */
+}
+
+.section-page .filter__wrapper .filter--select details[open] summary a::after {
+	content: ":";
+	margin-left: 0.125rem;
+}
+
+.section-page .filter__wrapper .filter--select details[open] summary p {
+	display: none;
+}
+
 .section-page .filter__wrapper .filter--input {
 	display: flex;
 	flex-direction: row;
