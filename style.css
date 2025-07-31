@@ -912,16 +912,27 @@ top-menu2 footer {
 	text-align: right;
 }
 
-.section-page .filter__wrapper .filter--input label, .section-page .filter__wrapper .filter--input button {
+.section-page .filter__wrapper .filter--input form {
+	display: flex;
+	flex-direction: row;
+	height: 1.5rem;
+}
+
+.section-page .filter__wrapper .filter--input label {
 	display: none;
+
+}
+
+.section-page .filter__wrapper .filter--input button {
+	opacity: 0;
 }
 
 .section-page .filter__wrapper .filter--input input,
 .section-page .filter__wrapper .filter--input button {
 	font-family: var(--body);
-	height: 2rem;
+	/* height: 2rem; */
 	font-size: 1rem;
-	padding-left: 0.5rem;
+	/* padding-left: 0.5rem; */
 }
 
 .section-page .filter__wrapper .filter--input input {
@@ -929,18 +940,51 @@ top-menu2 footer {
 	border: 1px solid var(--white);
 	border-style: none none solid none;
 	width: auto;
+	cursor: pointer;
+	padding: 0;
+	background: #ffffff00;
 }
 
-.section-page .filter input[type='search']:focus + button {
-	background: var(--colour2);
-	border: 1px solid var(--black);
-	border-style: solid;
+.section-page .filter__wrapper .filter--input input::placeholder {
+  color: var(--black);
+  opacity: 1;
+	font-weight: 500;
+	text-decoration: underline;
+	text-underline-offset: 3px;
+	text-decoration-thickness: 2px;
+
+}
+
+.section-page .filter__wrapper .filter--input input::-ms-input-placeholder { 
+  color: var(--black);
+}
+
+.section-page .filter__wrapper .filter--input input[type='search']:focus + button {
+	/* background: var(--colour2); */
+	/* border: 1px solid var(--black);
+	border-style: solid; */
+		background: var(--white);
+		/* border: none; */
+		 border: 1px solid var(--black);
+	border-style: none none solid none;
 	color: var(--black);
+	opacity: 1;
+	background: var(--colour3);
 }
 
-.section-page .filter input[type='search']:focus {
+.section-page .filter__wrapper .filter--input input[type='search']:focus {
+	border: 1px solid var(--black);
+	border-style: none none solid none;
+	background: var(--colour3);
+}
+
+.section-page .filter__wrapper .filter--input input[type='search']:focus::-moz-placeholder {
 	border: 1px solid var(--black);
 	border-style: solid none solid solid;
+	color: var(--grey2);
+	font-weight: 200;
+	text-decoration: none;
+	background: var(--colour3);
 }
 
 .section-page .filter button {
