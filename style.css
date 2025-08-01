@@ -247,7 +247,7 @@ a {
 	background: var(--black);
 	margin-bottom: 2rem;
 	border-radius: 1rem;
-  width: 2rem;
+	width: 2rem;
 }
 
 .top-menu2 .left-nav-col ul {
@@ -278,8 +278,8 @@ a {
 	padding: 0 4px;
 	text-transform: uppercase;
 	margin: 0;
-font-weight: 500;
-  border-radius: 2px;
+	font-weight: 500;
+	border-radius: 2px;
 }
 
 .top-menu2 main .scroll-col h2 {
@@ -588,12 +588,16 @@ font-weight: 500;
 }
 
 .landing-page3 .section__evenements {
-	margin-top: 15vh;
+	margin: 15vh 0;
+}
+
+.top-menu2 .section__evenements {
+	margin: 15vh 0;
+		width: 100%;
 }
 
 .landing-page3 .section__contenu,
-.landing-page3 .section__evenements,
-.section__voir {
+.landing-page3 .section__evenements {
 	width: 100%;
 }
 
@@ -604,7 +608,8 @@ font-weight: 500;
 }
 
 .landing-page3 .section__contenu .contenu__wrapper .contenu__header,
-.landing-page3 .section__evenements .evenements__wrapper .evenements__header {
+.landing-page3 .section__evenements .evenements__wrapper .evenements__header,
+.top-menu2 .section__evenements .evenements__wrapper .evenements__header {
 	display: flex;
 	flex-direction: row;
 	width: 100%;
@@ -620,12 +625,12 @@ font-weight: 500;
 	/* background: repeating-linear-gradient(90deg, var(--colour1),var(--colour1) 1px, transparent 2px, transparent 5px); */
 }
 
-.landing-page3 .evenements__header .marker-sq-lrg {
+.evenements__header .marker-sq-lrg {
 	background: var(--colour1);
 }
 
 .landing-page3 .section__contenu:hover,
-.landing-page3 .section__evenements:hover {
+.section__evenements:hover {
 	/* border: 1px solid var(--colour2); */
 	/* transition: linear 0.15s; */
 	/* box-shadow: var(--grey2) 0px 0px 24px 0px; */
@@ -634,8 +639,8 @@ font-weight: 500;
 	/* background: var(--colour1); */
 }
 
-.landing-page3 .section__contenu .highlighted-header,
-.landing-page3 .section__evenements .highlighted-header {
+.landing-page3 .section__contenu .highlighted-header, .top-menu2
+.section__evenements .highlighted-header {
 	background: var(--black);
 	color: var(--colour1);
 	width: 100%;
@@ -806,34 +811,35 @@ font-weight: 500;
 	content: '#';
 }
 
-.landing-page3 .section__evenements .evenements__wrapper .evenements__cards {
+.section__evenements .evenements__wrapper .evenements__cards {
 	display: flex;
 	flex-direction: row;
 	overflow-x: scroll;
 	flex-wrap: nowrap;
 }
 
-.landing-page3 .section__evenements .evenements__wrapper .card__item {
+.section__evenements .evenements__wrapper .card__item {
 	padding: 1rem;
 	cursor: pointer;
 	width: calc(100% / 4);
 	height: auto;
-	min-height: 35vh;
+	/* min-height: 35vh; */
+	min-width: 250px;
 }
 
-.landing-page3
+
 	.section__evenements
 	.evenements__wrapper
 	.card__item:nth-of-type(1)
 	.card--visual
 	.img--block,
-.landing-page3
+
 	.section__evenements
 	.evenements__wrapper
 	.card__item:nth-of-type(4)
 	.card--visual
 	.img--block,
-.landing-page3
+
 	.section__evenements
 	.evenements__wrapper
 	.card__item:nth-of-type(5)
@@ -842,16 +848,16 @@ font-weight: 500;
 	background: var(--colour3);
 }
 
-.landing-page3
+
 	.section__evenements
 	.evenements__wrapper
 	.card__item:hover
 	.card--visual
 	.img--block {
-	mix-blend-mode: hard-light;	
+	mix-blend-mode: hard-light;
 }
 
-.landing-page3
+
 	.section__evenements
 	.evenements__wrapper
 	.card__item
@@ -859,7 +865,7 @@ font-weight: 500;
 	position: relative;
 }
 
-.landing-page3
+
 	.section__evenements
 	.evenements__wrapper
 	.card__item
@@ -874,7 +880,7 @@ font-weight: 500;
 	mix-blend-mode: screen;
 	border-radius: 2px;
 }
-.landing-page3
+
 	.section__evenements
 	.evenements__wrapper
 	.card__item
@@ -2337,8 +2343,23 @@ details > summary {
 		display: block;
 	}
 
+	.landing-page3 .landing-menu a {
+		padding: 0.25rem 1rem;
+	}
+
 	.landing-page3 .landing-menu h1 wbr::before {
 		content: '-';
+	}
+
+	.landing-page3 .section__contenu {
+		margin-top: 8vh;
+	}
+
+	.landing-page3 .section__evenements {
+		margin: 8vh 0;
+	}
+	.top-menu2 .section__evenements {
+			margin: 8vh 0;
 	}
 
 	.section-page .card__wrapper .card__item {
