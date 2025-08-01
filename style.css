@@ -1003,7 +1003,7 @@ top-menu2 footer {
 	font-weight: 400;
 	border: 1px solid var(--grey2);
 	border-radius: 2px;
-	padding: 0.25rem 1rem;
+	padding: 0.25rem 3rem;
 	width: fit-content;
 	width: -moz-fit-content;
 	box-shadow: var(--grey2) 0px 0px 4px 0px inset;
@@ -1012,6 +1012,14 @@ top-menu2 footer {
 	color: var(--grey2);
 	display: block;
 }
+
+.section-page .tabs button:nth-of-type(even) {
+	transform: translateY(3px);
+}
+/* 
+.section-page .tabs button:nth-of-type(odd) {
+	transform: translateY(-2px);
+} */
 
 .section-page .tabs + p {
 	font-size: 0.85rem;
