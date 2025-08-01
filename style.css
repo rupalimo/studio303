@@ -858,26 +858,27 @@ a {
 }
 
 
-	.section__evenements
-	.evenements__wrapper
-	.card__item
-	.card--visual {
+.card--visual {
 	position: relative;
 }
 
-
 	.section__evenements
 	.evenements__wrapper
-	.card__item
-	.card--visual
+	.card__item .card--visual
+	.img--block {
+		background: var(--grey2); 
+		mix-blend-mode: screen;
+	}
+
+
+.card--visual
 	.img--block {
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: var(--grey2);
-	mix-blend-mode: screen;
+
 	border-radius: 2px;
 }
 
@@ -891,6 +892,23 @@ a {
 	padding: 0.75rem;
 	width: 100%;
 }
+
+.section-page .listed-row {
+		display: block;
+	}
+
+	.section-page .listed-row .residence__item {
+		display: grid;
+		grid-template-columns: auto 1fr;
+	}
+
+
+		.section-page .listed-row .residence__item h2, 	.section-page .listed-row .residence__item h3 {
+			margin: 0;
+			font-weight: 500;
+		font-family: var(--body);
+		}
+
 
 .landing-page3 footer,
 top-menu2 footer {
@@ -2292,6 +2310,8 @@ details > summary {
 	.section-page .card__wrapper .card__item {
 		width: calc(100% / 2 - 1rem);
 	}
+
+	
 
 	.top-menu2 .footer__wrapper .footer__links {
 		grid-template-columns: repeat(4, 1fr);
