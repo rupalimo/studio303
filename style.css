@@ -244,8 +244,10 @@ a {
 .top-menu2 .left-nav-col .marker-sq {
 	width: 1rem;
 	height: 1rem;
-	background: var(--colour1);
+	background: var(--black);
 	margin-bottom: 2rem;
+	border-radius: 1rem;
+  width: 2rem;
 }
 
 .top-menu2 .left-nav-col ul {
@@ -276,7 +278,8 @@ a {
 	padding: 0 4px;
 	text-transform: uppercase;
 	margin: 0;
-	font-weight: 400;
+font-weight: 500;
+  border-radius: 2px;
 }
 
 .top-menu2 main .scroll-col h2 {
@@ -580,11 +583,18 @@ a {
 	margin: 0;
 }
 
+.landing-page3 .section__contenu {
+	margin-top: 30vh;
+}
+
+.landing-page3 .section__evenements {
+	margin-top: 15vh;
+}
+
 .landing-page3 .section__contenu,
 .landing-page3 .section__evenements,
 .section__voir {
 	width: 100%;
-	margin-top: 30vh;
 }
 
 .landing-page3 .section__contenu .contenu__wrapper {
@@ -610,6 +620,10 @@ a {
 	/* background: repeating-linear-gradient(90deg, var(--colour1),var(--colour1) 1px, transparent 2px, transparent 5px); */
 }
 
+.landing-page3 .evenements__header .marker-sq-lrg {
+	background: var(--colour1);
+}
+
 .landing-page3 .section__contenu:hover,
 .landing-page3 .section__evenements:hover {
 	/* border: 1px solid var(--colour2); */
@@ -622,18 +636,13 @@ a {
 
 .landing-page3 .section__contenu .highlighted-header,
 .landing-page3 .section__evenements .highlighted-header {
-	/* background: var(--colour1); */
 	background: var(--black);
-	/* background: transparent; */
 	color: var(--colour1);
-
 	width: 100%;
-	/* color: var(--black); */
 	padding: 0 4px;
 	text-transform: uppercase;
 	margin: 0;
-	/* font-weight: 400; */
-	font-weight: 600;
+	font-weight: 500;
 	font-family: var(--body);
 	font-size: 0.85rem;
 	border-radius: 2px;
@@ -701,9 +710,9 @@ a {
 	.contenu__wrapper
 	.contenu__content
 	.contenu--text {
-	border: 1px solid var(--colour1);
+	/* border: 1px solid var(--colour1);
 	border-style: none solid solid solid;
-	border-radius: 0 0 2px 8rem;
+	border-radius: 0 0 2px 8rem; */
 	padding: 1rem 1rem 3rem calc(100% / 6);
 }
 
@@ -738,6 +747,21 @@ a {
 	h3 {
 	margin: 0 0.5rem 0.25rem 0;
 	font-weight: 200;
+	font-family: var(--schedule2);
+}
+
+.section__evenements .evenements__wrapper .card__item span h3:nth-of-type(1) {
+	font-weight: 200;
+}
+.section__evenements .evenements__wrapper .card__item span h3 {
+	font-size: calc(0.75rem + 0.25vw);
+	font-family: var(--schedule2);
+	margin: 0;
+}
+
+.section__evenements .evenements__wrapper .card__item span h3:nth-of-type(2) {
+	font-family: var(--schedule2);
+	margin-bottom: 0.5rem;
 }
 
 .contenu__wrapper .contenu--text span:nth-of-type(2) h3 {
@@ -757,7 +781,7 @@ a {
 	text-decoration: underline;
 	text-underline-offset: 3px;
 	text-decoration-thickness: 2px; */
-		background: rgba(255, 255, 255, 0.65);
+	background: rgba(255, 255, 255, 0.65);
 	margin: 1rem 0;
 	width: 100%;
 	display: block;
@@ -782,9 +806,84 @@ a {
 	content: '#';
 }
 
+.landing-page3 .section__evenements .evenements__wrapper .evenements__cards {
+	display: flex;
+	flex-direction: row;
+	overflow-x: scroll;
+	flex-wrap: nowrap;
+}
+
 .landing-page3 .section__evenements .evenements__wrapper .card__item {
 	padding: 1rem;
 	cursor: pointer;
+	width: calc(100% / 4);
+	height: auto;
+	min-height: 35vh;
+}
+
+.landing-page3
+	.section__evenements
+	.evenements__wrapper
+	.card__item:nth-of-type(1)
+	.card--visual
+	.img--block,
+.landing-page3
+	.section__evenements
+	.evenements__wrapper
+	.card__item:nth-of-type(4)
+	.card--visual
+	.img--block,
+.landing-page3
+	.section__evenements
+	.evenements__wrapper
+	.card__item:nth-of-type(5)
+	.card--visual
+	.img--block {
+	background: var(--colour3);
+}
+
+.landing-page3
+	.section__evenements
+	.evenements__wrapper
+	.card__item:hover
+	.card--visual
+	.img--block {
+	mix-blend-mode: hard-light;	
+}
+
+.landing-page3
+	.section__evenements
+	.evenements__wrapper
+	.card__item
+	.card--visual {
+	position: relative;
+}
+
+.landing-page3
+	.section__evenements
+	.evenements__wrapper
+	.card__item
+	.card--visual
+	.img--block {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: var(--grey2);
+	mix-blend-mode: screen;
+	border-radius: 2px;
+}
+.landing-page3
+	.section__evenements
+	.evenements__wrapper
+	.card__item
+	.card--visual
+	img {
+	filter: blur(8px);
+	border-radius: 1rem;
+	padding: 0.75rem;
+	width: 100%;
 }
 
 .landing-page3 footer,
@@ -1301,8 +1400,8 @@ top-menu2 footer {
 
 .top-menu2 .scroll-col .scroll--buttons button {
 	width: calc(50% + 1px);
-		background: rgba(255, 255, 255, 0.85);
-		mix-blend-mode: darken;
+	background: rgba(255, 255, 255, 0.85);
+	mix-blend-mode: darken;
 }
 
 .top-menu2 .scroll-col .scroll--buttons button,
@@ -1315,8 +1414,8 @@ top-menu2 footer {
 	cursor: pointer;
 	font-family: var(--menu);
 	font-size: 1rem;
-text-align: center;
-	
+	text-align: center;
+
 	padding: 0.25rem 1rem;
 	font-weight: 400;
 }
@@ -1331,7 +1430,8 @@ text-align: center;
 	border-radius: 0 2px 2px 0;
 }
 
-.top-menu2 .scroll-col .scroll--buttons button:hover, .contenu__wrapper .contenu--description a:hover {
+.top-menu2 .scroll-col .scroll--buttons button:hover,
+.contenu__wrapper .contenu--description a:hover {
 	background: var(--colour1);
 	box-shadow: var(--white) 0 0 4px 1px inset;
 }
@@ -1727,6 +1827,7 @@ text-align: center;
 	font-weight: 400;
 	font-family: var(--body);
 	font-size: 0.85rem;
+	border-radius: 2px;
 }
 
 .style-guide__wrapper .section-page__title--mobile {
