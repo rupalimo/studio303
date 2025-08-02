@@ -1550,6 +1550,10 @@ top-menu2 footer {
 	margin-right: 0.5rem;
 }
 
+.scroll-col.residences .scroll--titles h3:nth-of-type(1) {
+	text-transform: uppercase;
+}
+
 .top-menu2 .scroll-col .scroll--titles h3 + h3::before {
 	content: '— ';
 }
@@ -1639,6 +1643,31 @@ top-menu2 footer {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
+}
+
+.top-menu2 .scroll-col.residences .two-col {
+	display: block;
+	margin: 2rem 0;
+	border: 1px dashed var(--colour2);
+	border-style: dashed none;
+	padding: 1rem 0;
+}
+
+.top-menu2 .scroll-col.residences .two-col span {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	
+}
+
+.top-menu2 .scroll-col.residences .two-col span p:nth-of-type(1) {
+	font-weight: 500;
+	margin-right: 0.5rem;
+	
+}
+
+.top-menu2 .scroll-col.residences .two-col span p {
+	margin: 0.25rem 0;
 }
 
 .top-menu2 .scroll-col .two-col div {
