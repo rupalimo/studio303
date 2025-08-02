@@ -926,10 +926,13 @@ a {
 	font-size: calc(1.5rem + 1vw);
 	font-weight: 500;
 	line-height: 1.9ch;
+		text-transform: uppercase;
+
 }
 .section-page .listed-row .residence__item h3 {
 	font-size: calc(0.75rem + 0.25vw);
 	/* font-weight: 400; */
+	text-transform: capitalize;
 }
 
 .section-page .listed-row .residence__item h2,
