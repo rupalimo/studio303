@@ -901,6 +901,12 @@ a {
 	/* mix-blend-mode: color; */
 }
 
+.listed-row .residence__item .card--visual .img--block {
+	height: 112px;
+	box-shadow: var(--grey2) 0px 0px 4px 0px inset;
+			mix-blend-mode: darken;
+		background: transparent;
+}
 
 
 .section-page .listed-row .colour-block {
@@ -941,13 +947,14 @@ a {
 	/* padding: 0.5rem; */
 }
 
+
 .card--visual .img--block {
 	position: absolute;
 	width: 100%;
-	height: 112px;
+	height: 100%;
+	
 	top: 0;
 	left: 0;
-		box-shadow: var(--grey2) 0px 0px 4px 0px inset;
 	/* border-radius: 2px;
 		filter: blur(2px);
 		border: 1px solid var(--colour1); */
@@ -957,8 +964,9 @@ a {
 	padding: 1rem;
 	/* background: var(--colour3);
 	mix-blend-mode: exclusion; */
-		mix-blend-mode: darken;
-		background: transparent;
+		/* mix-blend-mode: darken;
+		background: transparent; */
+		mix-blend-mode: exclusion;
 }
 
 .landing-page3 footer,
