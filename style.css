@@ -1070,7 +1070,11 @@ top-menu2 footer {
 	margin: 0;
 }
 
-.section-page .tabs button:first-of-type {
+.section-page .tabs button::first-letter {
+	text-transform: uppercase;
+}
+
+.section-page .tabs button.tab--active {
 	background: var(--colour1);
 	color: var(--grey1);
 	border: 1px solid var(--grey1);
