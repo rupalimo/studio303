@@ -1350,10 +1350,17 @@ top-menu2 footer {
 	text-underline-offset: 3px;
 	text-decoration-thickness: 2px;
 	margin-right: 0.5rem;
+	font-size: calc(0.75rem + 0.25vw);
 }
 
 .section-page .filter__wrapper .filter--select summary p {
 	margin: 0;
+	font-size: calc(0.75rem + 0.25vw);
+	text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
 }
 
 .section-page .filter__wrapper .filter--select summary p::before {
@@ -1396,11 +1403,13 @@ top-menu2 footer {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: baseline;
+	flex-wrap: wrap;
+	flex-wrap: wrap;
 }
 
 .section-page .filter__wrapper .filter--input p {
 	margin: 0;
-	font-size: 0.85rem;
+	font-size: calc(0.75rem + 0.25vw);
 	color: var(--grey1);
 	font-weight: 400;
 	text-align: right;
@@ -1435,7 +1444,7 @@ top-menu2 footer {
 }
 
 .section-page .filter p {
-	font-size: 0.85rem;
+	font-size: calc(0.75rem + 0.25vw);
 	color: var(--grey1);
 	font-weight: 400;
 	text-align: right;
@@ -1495,7 +1504,7 @@ top-menu2 footer {
 .section-page .filter__wrapper .filter--input button {
 	font-family: var(--body);
 	/* height: 2rem; */
-	font-size: 1rem;
+font-size: calc(0.75rem + 0.25vw);
 	/* padding-left: 0.5rem; */
 }
 
@@ -1507,6 +1516,7 @@ top-menu2 footer {
 	cursor: pointer;
 	padding: 0;
 	background: #ffffff00;
+	font-size: calc(0.75rem + 0.25vw);
 }
 
 .section-page .filter__wrapper .filter--input input::placeholder {
@@ -1516,6 +1526,7 @@ top-menu2 footer {
 	text-decoration: underline;
 	text-underline-offset: 3px;
 	text-decoration-thickness: 2px;
+	
 }
 
 .section-page .filter__wrapper .filter--input input::-ms-input-placeholder {
@@ -2437,7 +2448,7 @@ top-menu2 footer {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
-	align-items: baseline;
+  height: 1.5rem;
 }
 
 .style-guide__wrapper .form-input__search label {
@@ -2446,38 +2457,64 @@ top-menu2 footer {
 
 .style-guide__wrapper .form-input__search input {
 	outline: none;
-	border: 1px solid var(--grey1);
-	border-style: solid none solid solid;
-	width: calc(100% - 2rem);
+  border: 1px solid var(--white);
+  border-style: none none solid none;
+  width: auto;
+  cursor: pointer;
+  padding: 0;
+  background: #ffffff00;
 	font-family: var(--body);
-	height: 2rem;
+  height: 1.5rem;
+  	font-size: calc(0.75rem + 0.25vw);
+		font-weight: 500;
+}
+
+.style-guide__wrapper .form-input__search input::placeholder {
+	color: var(--black);
+  opacity: 1;
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
+	font-family: var(--body);
 	font-size: calc(0.75rem + 0.25vw);
-	padding-left: 0.5rem;
 }
 
 .style-guide__wrapper .form-input__search input[type='search']:focus {
+border: 1px solid var(--black);
+  border-style: none none solid none;
+  background: var(--colour3);
+}
+
+
+.style-guide__wrapper .form-input__search input[type='search']:focus::placeholder {
 	border: 1px solid var(--black);
-	border-style: solid none solid solid;
+  border-style: solid none solid solid;
+  color: var(--grey2);
+  font-weight: 200;
+  text-decoration: none;
+  background: var(--colour3);
 }
 
 .style-guide__wrapper .form-input__search button {
-	background: var(--white);
-	outline: none;
-	border: 1px solid var(--grey1);
-	border-style: solid solid solid none;
-	color: var(--grey1);
-	padding: 0 0.5rem;
 	font-family: var(--body);
-	height: 2rem;
-	font-size: calc(0.75rem + 0.25vw);
+  height: 1.5rem;
+  font-size: 1rem;
+  padding-left: 0.5rem;
+	opacity: 0;
 }
 
 .style-guide__wrapper .form-input__search input[type='search']:focus + button {
 	background: var(--colour2);
-	border: 1px solid var(--black);
-	border-style: solid;
-	color: var(--black);
-	margin-left: -1px;
+  border: 1px solid var(--black);
+  border-style: solid;
+  background: var(--white);
+  border: none;
+  border: 1px solid var(--black);
+  border-style: none none solid none;
+  color: var(--black);
+  opacity: 1;
+  background: var(--colour3);
 }
 
 .style-guide__wrapper .filter--button {
@@ -2806,5 +2843,10 @@ details > summary {
 
 	.top-menu2 .footer__wrapper .footer__links div a:first-of-type {
 		margin-bottom: 0.5rem;
+	}
+
+	.section-page .filter__wrapper {
+		grid-template-columns: 100%;
+		grid-template-rows: 2.5rem 2rem;
 	}
 }
