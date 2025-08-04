@@ -1612,6 +1612,10 @@ font-size: calc(0.75rem + 0.25vw);
 	cursor: pointer;
 }
 
+.section-page .card__wrapper .card__item:hover img {
+}
+
+
 .section-page .card__wrapper .card__item span h3 {
 	margin: 0 0.25rem 0 0;
 }
