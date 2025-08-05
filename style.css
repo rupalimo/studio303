@@ -1069,6 +1069,11 @@ a {
 	font-family: var(--body);
 }
 
+
+.section-page .listed-row .activities__item h2 {
+	font-family: var(--schedule2);
+}
+
 .section-page .listed-row .residence__item img {
 	width: 150px;
 	height: auto;
@@ -1716,6 +1721,11 @@ font-size: calc(0.75rem + 0.25vw);
 	margin: 0;
 	/* font-size: 2rem; */
 	font-size: calc(1.25rem + 1vw);
+}
+
+.top-menu2 .scroll-col.residences .scroll--titles h3 {
+	font-family: var(--body);
+	font-weight: 400;
 }
 
 .top-menu2 .scroll-col .scroll--buttons {
