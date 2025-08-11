@@ -502,6 +502,16 @@ a {
 	width: 100%;
 }
 
+#video-test {
+position: absolute;
+  right: 2rem;
+  bottom: 1rem;
+ 
+  object-fit: cover;
+  object-position: 99% 0;
+  z-index: -1;
+}
+
 .landing-page3 .landing-menu div {
 	align-items: center;
 	display: flex;
@@ -535,8 +545,8 @@ a {
 }
 
 .landing-page3 .landing-menu h1:hover {
-	color: var(--colour1);
-	-webkit-text-stroke-width: 0.5rem;
+	color: var(--black);
+	-webkit-text-stroke-width: 0.15rem;
 	/* text-shadow: -1px -1px 0 var(--colour1), 1px -1px 0 var(--colour1),
 		-1px 1px 0 var(--colour1), 1px 1px 0 var(--colour1); */
 /* 
