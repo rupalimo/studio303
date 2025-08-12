@@ -500,19 +500,19 @@ a {
 	min-height: 85vh;
 	justify-content: space-between;
 	width: 100%;
-	background-image: url(imgs/landing.svg);
+	/* background-image: url(imgs/landing.svg);
 	background-repeat: no-repeat;
-  background-position: right top
+  background-position: right top */
 }
 
 #video-test {
-position: absolute;
-  right: 2rem;
-  bottom: 1rem;
- 
-  object-fit: cover;
-  object-position: 99% 0;
-  z-index: -1;
+	position: absolute;
+	right: 0;
+	bottom: 6rem;
+	object-fit: cover;
+	object-position: 80% 0;
+	z-index: -1;
+	scale: 2.5;
 }
 
 .landing-page3 .landing-menu div {
@@ -542,23 +542,23 @@ position: absolute;
 	width: max-content;
 	/* text-shadow: -1px -1px 0 var(--colour1), 1px -1px 0 var(--colour1),
 		-1px 1px 0 var(--colour1), 1px 1px 0 var(--colour1); */
-			text-shadow: -1px -1px 0 var(--black), 1px -1px 0 var(--black),
+	text-shadow: -1px -1px 0 var(--black), 1px -1px 0 var(--black),
 		-1px 1px 0 var(--black), 1px 1px 0 var(--black);
 	font-weight: 400;
 }
 
 .landing-page3 .landing-menu h1:hover {
 	color: var(--black);
-	-webkit-text-stroke-width: 0.15rem;
+	-webkit-text-stroke-width: 0.45rem;
 	/* text-shadow: -1px -1px 0 var(--colour1), 1px -1px 0 var(--colour1),
 		-1px 1px 0 var(--colour1), 1px 1px 0 var(--colour1); */
-/* 
+	/* 
 			text-shadow: -1px -1px 0 var(--colour1), 1px -1px 0 var(--colour1),
 		-1px 1px 0 var(--colour1), 1px 1px 0 var(--colour1); */
 }
 
 .landing-page3 .landing-menu.OP_02 h1 {
-		font-size: calc(5rem + 2vw);
+	font-size: calc(5rem + 2vw);
 	padding: 0.25rem 2rem 0.25rem 0;
 	cursor: pointer;
 	transition: linear 0.125s;
@@ -568,7 +568,7 @@ position: absolute;
 	width: max-content;
 	/* text-shadow: -1px -1px 0 var(--colour1), 1px -1px 0 var(--colour1),
 		-1px 1px 0 var(--colour1), 1px 1px 0 var(--colour1); */
-			text-shadow: -1px -1px 0 var(--black), 1px -1px 0 var(--black),
+	text-shadow: -1px -1px 0 var(--black), 1px -1px 0 var(--black),
 		-1px 1px 0 var(--black), 1px 1px 0 var(--black);
 	font-weight: 400;
 	font-family: var(--menu);
@@ -587,15 +587,15 @@ position: absolute;
 	/* text-align: center; */
 }
 
-.landing-page3 .landing-menu.OP_03 span:last-of-type h1  {
+.landing-page3 .landing-menu.OP_03 span:last-of-type h1 {
 	width: auto;
 }
 
-.landing-page3 .landing-menu.OP_03 h1  {
+.landing-page3 .landing-menu.OP_03 h1 {
 	font-size: calc(3rem + 2vw);
 	color: var(--black);
 	text-wrap: wrap;
-  width: 100%;
+	width: 100%;
 	line-height: 1.8ch;
 	padding: 0 0 2rem 0;
 }
@@ -605,8 +605,8 @@ position: absolute;
 }
 
 .landing-page3 .landing-menu.OP_03 a {
- margin: 0 1rem;
- font-weight: 400;
+	margin: 0 1rem;
+	font-weight: 400;
 }
 
 .landing-page3 .landing-menu.OP_03 a:nth-of-type(even) {
