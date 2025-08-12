@@ -500,6 +500,9 @@ a {
 	min-height: 85vh;
 	justify-content: space-between;
 	width: 100%;
+	background-image: url(imgs/landing.svg);
+	background-repeat: no-repeat;
+  background-position: right top
 }
 
 #video-test {
