@@ -35,7 +35,7 @@
 	--grey2: #b0b0b0;
 	--white: #ffffff;
 	--colour1: #a6ff00;
-	--colour2: #fff200;
+	--colour2: #ffa126;
 	--colour3: #d3f19c;
 	/* --yellow1: #fff200;
 	--yellow2: #fff98b;
@@ -481,14 +481,14 @@ a {
 	content: 'Soutien aux artistes en danse et performance indisciplinees a montreal depuis 1989.';
 	width: 30%;
 	min-width: 350px;
-	padding-bottom: 1rem;
+	padding-top: 1rem;
 }
 
 .landing-page3.top-menu2 .nested-menu::after {
 	content: 'Lundi - Vendredi 9:00 - 16:00h Tiohtià:ke / Montreal';
 	width: 20%;
 	min-width: 250px;
-	padding-bottom: 1rem;
+	padding-top: 1rem;
 }
 
 .landing-page3 .landing-menu {
@@ -532,7 +532,7 @@ a {
 }
 
 .landing-page3 .landing-menu h1 {
-	font-size: calc(6rem + 2vw);
+	font-size: calc(5rem + 2vw);
 	padding: 0.25rem 2rem 0.25rem 0;
 	cursor: pointer;
 	transition: linear 0.125s;
@@ -555,6 +555,68 @@ a {
 	/* 
 			text-shadow: -1px -1px 0 var(--colour1), 1px -1px 0 var(--colour1),
 		-1px 1px 0 var(--colour1), 1px 1px 0 var(--colour1); */
+}
+
+.landing-page3 .landing-menu.OP_3b video {
+	display: none;
+}
+.landing-page3 .landing-menu.OP_3b span {
+	grid-template-rows: min-content 1fr;
+	grid-template-columns: 1fr;
+	justify-items: center;
+}
+/* 
+.landing-page3 .landing-menu.OP_3b span:not(:last-of-type) {
+	border-bottom: 2px solid var(--colour2);
+} */
+
+.landing-page3 .landing-menu.OP_3b span h1 {
+	text-align: center;
+	padding: 0.25rem 2rem 0.25rem;
+	text-transform: uppercase;
+	font-family: var(--menu);
+	letter-spacing: 1px;
+	word-spacing: 1rem;
+		font-weight: 400;
+		line-height: 1.95ch;
+			/* -webkit-text-stroke-width: 0.25rem;
+	-webkit-text-stroke-color: var(--black); */
+	/* text-shadow: -1px -1px 0 var(--colour1), 1px -1px 0 var(--colour1),
+		-1px 1px 0 var(--colour1) inset; */
+	color: var(--black);
+  -webkit-text-stroke-width: 0.075rem;
+  -webkit-text-stroke-color: var(--colour1);
+
+}
+
+.landing-page3 .landing-menu.OP_3b span h1:hover {
+		/* color: var(--white); */
+	-webkit-text-stroke-width: 0.25rem;
+	-webkit-text-stroke-color: var(--colour1);
+	/* font-weight: ; */
+	text-shadow: -1px -1px 0 var(--colour1), 1px -1px 0 var(--colour1),
+		-1px 1px 0 var(--colour1), 1px 1px 0 var(--colour1);
+
+	
+}
+
+.landing-page3 .landing-menu.OP_3b span div {
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.landing-page3 .landing-menu.OP_3b span div a {
+	margin: 0 1rem;
+	font-weight: 500;
+}
+
+.landing-page3 .landing-menu.OP_3b span div a:hover  {
+	text-decoration: underline;
+	text-decoration-color: var(--colour1);
+	text-underline-offset: 4px;
+	text-decoration-thickness: 4px;
+	color: var(--black);
 }
 
 .landing-page3 .landing-menu.OP_02 h1 {
