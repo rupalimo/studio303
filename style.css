@@ -578,11 +578,8 @@ a {
 	letter-spacing: 1px;
 	word-spacing: 1rem;
 		font-weight: 400;
-		line-height: 1.95ch;
-			/* -webkit-text-stroke-width: 0.25rem;
-	-webkit-text-stroke-color: var(--black); */
-	/* text-shadow: -1px -1px 0 var(--colour1), 1px -1px 0 var(--colour1),
-		-1px 1px 0 var(--colour1) inset; */
+		line-height: 2ch;
+
 	color: var(--black);
   -webkit-text-stroke-width: 0.075rem;
   -webkit-text-stroke-color: var(--colour1);
@@ -590,10 +587,10 @@ a {
 }
 
 .landing-page3 .landing-menu.OP_3b span h1:hover {
-		/* color: var(--white); */
+
 	-webkit-text-stroke-width: 0.25rem;
 	-webkit-text-stroke-color: var(--colour1);
-	/* font-weight: ; */
+
 	text-shadow: -1px -1px 0 var(--colour1), 1px -1px 0 var(--colour1),
 		-1px 1px 0 var(--colour1), 1px 1px 0 var(--colour1);
 
@@ -608,16 +605,34 @@ a {
 
 .landing-page3 .landing-menu.OP_3b span div a {
 	margin: 0 1rem;
-	font-weight: 500;
+	font-weight: 400;
+}
+
+.landing-page3 .landing-menu.OP_3b span div a::before {
+
+	content: "(";
+	opacity: 0;
+	margin-right: 0.25rem;
+	color: var(--colour1);
+}
+
+.landing-page3 .landing-menu.OP_3b span div a::after {
+	
+	content: ")";
+	opacity: 0;
+	margin-left: 0.25rem;
+	color: var(--colour1);
 }
 
 .landing-page3 .landing-menu.OP_3b span div a:hover  {
-	text-decoration: underline;
-	text-decoration-color: var(--colour1);
-	text-underline-offset: 4px;
-	text-decoration-thickness: 4px;
-	color: var(--black);
+
+ color: var(--black);
 }
+
+.landing-page3 .landing-menu.OP_3b span div a:hover::before, .landing-page3 .landing-menu.OP_3b span div a:hover::after  {
+	opacity: 1;
+}
+
 
 .landing-page3 .landing-menu.OP_02 h1 {
 	font-size: calc(5rem + 2vw);
