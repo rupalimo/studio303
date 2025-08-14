@@ -36,10 +36,10 @@
 	--white: #ffffff;
 	--colour1: #a6ff00;
 	--colour2: #ffa126;
-	--colour3: #d3f19c;
-	/* --yellow1: #fff200;
+	--colour3: #fff200;
+	--yellow1: #fff200;
 	--yellow2: #fff98b;
-	--yellow3: #eee986; */
+	--yellow3: #eee986;
 	--green1: #a6ff00;
 	--green2: #deffa0;
 	--green3: #d3f19c;
@@ -101,7 +101,7 @@ body {
 }
 
 .top-menu2 .top-menu-nav {
-	padding: 0 1rem;
+	padding: 0 1rem 1rem 1rem;
 	position: fixed;
 	width: 100%;
 	top: 0;
@@ -500,26 +500,23 @@ a {
 	min-height: 85vh;
 	justify-content: space-between;
 	width: 100%;
-	/* background-image: url(imgs/landing.svg);
-	background-repeat: no-repeat;
-  background-position: right top */
 }
 
 #video-test {
 	position: absolute;
 	right: 0;
-	bottom: 6rem;
-	object-fit: cover;
-	object-position: 80% 0;
+	bottom: 0;
+	/* object-fit: cover;
+	object-position: 80% 0; */
 	z-index: -1;
-	scale: 2.5;
+	/* scale: 2.5; */
 }
 
 .landing-page3 .landing-menu div {
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-	mix-blend-mode: darken;
+	/* mix-blend-mode: darken; */
 	justify-content: center;
 }
 
@@ -549,17 +546,45 @@ a {
 
 .landing-page3 .landing-menu h1:hover {
 	color: var(--black);
-	-webkit-text-stroke-width: 0.45rem;
-	/* text-shadow: -1px -1px 0 var(--colour1), 1px -1px 0 var(--colour1),
-		-1px 1px 0 var(--colour1), 1px 1px 0 var(--colour1); */
-	/* 
-			text-shadow: -1px -1px 0 var(--colour1), 1px -1px 0 var(--colour1),
-		-1px 1px 0 var(--colour1), 1px 1px 0 var(--colour1); */
+-webkit-text-stroke-width: 0.065rem;
+  -webkit-text-stroke-color: var(--white);
 }
 
-.landing-page3 .landing-menu.OP_3b video {
+#img-test {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	/* object-fit: cover;
+	object-position: 80% 0; */
+	z-index: -1;
+	/* scale: 2.5; */
+	width: 100%;
+	height: auto;
+}
+
+.landing-page3 .landing-menu.OP_3a video, .landing-page3 .landing-menu.OP_3b #video-test {
+
+		position: absolute;
+		scale: 1;
+	left: 0;
+	bottom: 0;
+	object-position: 0;
+	object-fit: contain;
+	width: 96%;
+  height: auto;
+	z-index: -1;
+
+
+}
+
+.landing-page3 .landing-menu.OP_3a video {
+	/* display: none; */
+}
+
+.landing-page3 .landing-menu.OP_3b #img-test {
 	display: none;
 }
+
 .landing-page3 .landing-menu.OP_3b span {
 	grid-template-rows: min-content 1fr;
 	grid-template-columns: 1fr;
@@ -577,24 +602,21 @@ a {
 	font-family: var(--menu);
 	letter-spacing: 1px;
 	word-spacing: 1rem;
-		font-weight: 400;
-		line-height: 2ch;
+	font-weight: 400;
+	line-height: 2ch;
+font-size: calc(3rem + 2vw);
 
 	color: var(--black);
-  -webkit-text-stroke-width: 0.075rem;
-  -webkit-text-stroke-color: var(--colour1);
-
+	/* -webkit-text-stroke-width: 0.075rem;
+	-webkit-text-stroke-color: var(--colour1); */
 }
 
 .landing-page3 .landing-menu.OP_3b span h1:hover {
-
 	-webkit-text-stroke-width: 0.25rem;
-	-webkit-text-stroke-color: var(--colour1);
+	-webkit-text-stroke-color: var(--black);
 
-	text-shadow: -1px -1px 0 var(--colour1), 1px -1px 0 var(--colour1),
-		-1px 1px 0 var(--colour1), 1px 1px 0 var(--colour1);
-
-	
+	/* text-shadow: -1px -1px 0 var(--colour1), 1px -1px 0 var(--colour1),
+		-1px 1px 0 var(--colour1), 1px 1px 0 var(--colour1); */
 }
 
 .landing-page3 .landing-menu.OP_3b span div {
@@ -605,34 +627,94 @@ a {
 
 .landing-page3 .landing-menu.OP_3b span div a {
 	margin: 0 1rem;
-	font-weight: 400;
+	font-size: 1rem;
 }
 
-.landing-page3 .landing-menu.OP_3b span div a::before {
-
-	content: "(";
+.landing-page3 .landing-menu span div a::before, .landing-page3 .landing-menu.OP_3b span div a::before {
+	content: '(';
 	opacity: 0;
 	margin-right: 0.25rem;
-	color: var(--colour1);
+	color: var(--black);
+font-weight: 800;
 }
 
-.landing-page3 .landing-menu.OP_3b span div a::after {
-	
-	content: ")";
+.landing-page3 .landing-menu span div a::after, .landing-page3 .landing-menu.OP_3b span div a::after {
+	content: ')';
 	opacity: 0;
 	margin-left: 0.25rem;
-	color: var(--colour1);
+	color: var(--black);
+	font-weight: 800;
 }
 
-.landing-page3 .landing-menu.OP_3b span div a:hover  {
-
- color: var(--black);
+.landing-page3 .landing-menu.OP_3b span div a:hover {
+	color: var(--black);
 }
 
-.landing-page3 .landing-menu.OP_3b span div a:hover::before, .landing-page3 .landing-menu.OP_3b span div a:hover::after  {
+
+.landing-page3 .landing-menu span div a:hover::before, .landing-page3 .landing-menu span div a:hover::after, .landing-page3 .landing-menu.OP_3b span div a:hover::before,
+.landing-page3 .landing-menu.OP_3b span div a:hover::after {
 	opacity: 1;
 }
 
+.landing-page3 .landing-menu span div a:hover::before, .landing-page3 .landing-menu span div a:hover::after {
+	color: var(--colour2);
+}
+
+.landing-page3 .landing-menu.OP_3c #img-test {
+	/* display: none; */
+}
+
+.landing-page3 .landing-menu.OP_3c #video-test {
+	display: none;
+}
+
+.landing-page3 .landing-menu.OP_3c h1 {
+	text-align: center;
+	padding: 0.25rem 2rem 0.25rem 0;
+	text-transform: uppercase;
+	font-family: var(--menu);
+	letter-spacing: 9px;
+	word-spacing: 1rem;
+	font-weight:400;
+	line-height: 2ch;
+	color: var(--white);
+	-webkit-text-stroke-width: 0.5rem;
+	-webkit-text-stroke-color: var(--black);
+	/* text-shadow: 0 0 40px var(--black); */
+}
+
+.landing-page3 .landing-menu.OP_3c h1:hover {
+		-webkit-text-stroke-width: 0;
+}
+
+.landing-page3 .landing-menu.OP_3c span div a {
+	font-size: 1rem;
+}
+
+.landing-page3 .landing-menu.OP_3c span div a::before {
+	content: '(';
+	opacity: 0;
+	margin-right: 0.25rem;
+	color: var(--colour2);
+		font-weight: 800;
+}
+
+.landing-page3 .landing-menu.OP_3c span div a::after {
+	content: ')';
+	opacity: 0;
+	margin-left: 0.25rem;
+	color: var(--colour2);
+		font-weight: 800;
+}
+
+.landing-page3 .landing-menu.OP_3c span div a:hover {
+	color: var(--black);
+}
+
+.landing-page3 .landing-menu.OP_3c span div a:hover::before,
+.landing-page3 .landing-menu.OP_3c span div a:hover::after {
+	opacity: 1;
+}
 
 .landing-page3 .landing-menu.OP_02 h1 {
 	font-size: calc(5rem + 2vw);
@@ -700,7 +782,8 @@ a {
 }
 
 .landing-page3 .landing-menu a {
-	font-size: calc(0.85rem + 0.5vw);
+	/* font-size: calc(0.85rem + 0.5vw); */
+	font-size: 1rem;
 	/* border: 1px solid var(--grey1); */
 	/* padding: 0.25rem 1rem; */
 	/* padding: 0.25rem 3rem; */
@@ -717,9 +800,6 @@ a {
 	/* letter-spacing: 0px; */
 }
 
-.landing-page3 .landing-menu a:hover {
-	color: var(--colour1);
-}
 
 .landing-page3 .landing-menu a::first-letter {
 	text-transform: uppercase;
