@@ -22,6 +22,20 @@
 	}
 }
 
+ @keyframes blink {
+        0% {
+         background: radial-gradient(
+		circle,
+		var(--white) 0%,
+		var(--white) 50%,
+		var(--white) 100%
+	);
+        }
+        100% {
+          background: var(--colour1);
+        }
+      }
+
 :root {
 	--menu: 'Roboto Flex', sans-serif;
 	--body: 'Roboto', sans-serif;
@@ -613,6 +627,71 @@ text-transform: uppercase;
 		color: var(--black);
 		-webkit-text-stroke-color: var(--black);
 		-webkit-text-stroke-width: 0.095rem;
+}
+
+.landing-page3 .landing-menu.OP_3c-collage h1 {
+font-size: calc(5rem + 3vw);
+}
+
+.landing-page3 .landing-menu.OP_3c-collage h1:hover {
+	paint-order: stroke fill;
+text-shadow: -1px -1px 0px var(--colour1), 1px -1px 0px var(--colour1),
+		-1px 1px 0px var(--colour1), 1px 1px 0px var(--colour1);
+		color: var(--colour1);
+		color: var(--colour1);
+		-webkit-text-stroke-color: var(--colour1);
+		-webkit-text-stroke-width: 0.095rem;
+}
+
+.landing-page3 .landing-menu.OP_3c-collage div a {
+	font-weight: 600;
+  cursor: pointer;
+  margin: 1px 0;
+  background: #ffffffe8;
+  border-radius: 1rem;
+  padding: 0 1.25rem 0 0.5rem;
+ 
+  border: 1px solid var(--colour1);
+  z-index: 1;
+}
+
+.landing-page3 .landing-menu.OP_3c-collage div a::before {
+	content: ' ';
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-right: 0.25rem;
+  border-radius: 1rem;
+  display: inline-block;
+  transform: translateY(-20%);
+  vertical-align: middle;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0);
+  transition: all 0.25s ease-in;
+}
+
+.landing-page3 .landing-menu.OP_3c-collage div .blink--on::before {
+animation: blink 1.5s ease-in-out infinite;
+  border: 1px solid var(--colour1);
+  content: ' ';
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-right: 0.25rem;
+  border-radius: 1rem;
+  display: inline-block;
+  transform: translateY(-20%);
+  vertical-align: middle;
+  background: var(--white);
+}
+
+.landing-page3 .landing-menu.OP_3c-collage div a::after {
+	content:"";
+	margin-left: 0;
+}
+
+.landing-page3 .landing-menu.OP_3c-collage div a:hover {
+  padding-left: 0.5rem;
+  border: 1px solid var(--colour1);
+  background: radial-gradient( circle, var(--white) 0%, var(--colour1) 50%, var(--white) 100% );
 }
 
 
