@@ -528,27 +528,32 @@ a {
 	grid-template-columns: min-content 1fr;
 }
 
+.landing-page3 .landing-menu span:not(:last-of-type) {
+	border-bottom: 0.5rem solid var(--colour1);
+}
+
 .landing-page3 .landing-menu h1 {
 	font-size: calc(5rem + 2vw);
 	padding: 0.25rem 2rem 0.25rem 0;
 	cursor: pointer;
 	transition: linear 0.125s;
-	color: var(--white);
-	/* color: var(--colour1); */
-	letter-spacing: -2px;
+	letter-spacing: -5px;
+	word-spacing: 1rem;
 	width: max-content;
-	/* text-shadow: -1px -1px 0 var(--colour1), 1px -1px 0 var(--colour1),
-		-1px 1px 0 var(--colour1), 1px 1px 0 var(--colour1); */
-	text-shadow: -1px -1px 0 var(--black), 1px -1px 0 var(--black),
-		-1px 1px 0 var(--black), 1px 1px 0 var(--black);
-	font-weight: 400;
+	font-weight: 500;
+		color: var(--black);
+
 }
 
 .landing-page3 .landing-menu h1:hover {
-	color: var(--black);
-	-webkit-text-stroke-width: 0.065rem;
-	-webkit-text-stroke-color: var(--white);
+
+		text-shadow: -1px -1px 0px var(--black), 1px -1px 0px var(--black),
+		-1px 1px 0px var(--black), 1px 1px 0px var(--black);
+		color: var(--black);
+		-webkit-text-stroke-color: var(--black);
+		-webkit-text-stroke-width: 0.095rem;
 }
+
 
 #img-test {
 	position: absolute;

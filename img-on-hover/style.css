@@ -435,7 +435,7 @@ animation: none;
 
 
 .landing-page3 .landing-menu h1 {
-	font-size: calc(5rem + 2vw);
+	font-size: calc(5rem + 3vw);
 	padding: 0.25rem 1.5rem 0.25rem 0;
 	cursor: pointer;
 	transition: linear 0.125s;
@@ -443,7 +443,8 @@ animation: none;
 	color: var(--text-color);
 	text-transform: uppercase;
 	/* color: var(--colour1); */
-	letter-spacing: -2px;
+	letter-spacing: -4px;
+	word-spacing: 2rem;
 	width: max-content;
 	cursor: pointer;
 	/* text-shadow: -1px -1px 0 var(--colour1), 1px -1px 0 var(--colour1),
