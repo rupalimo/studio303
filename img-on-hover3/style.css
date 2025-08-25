@@ -486,8 +486,9 @@ transition: all 0.125s ease-in;
 
 .img-gallery__wrapper img {
 	opacity: 0;
-	width: 260px;
+	width: 160px;
 	height: auto;
+	transition: all 0.25s ease-in-out;
 }
 
 .img-gallery__wrapper img:hover {

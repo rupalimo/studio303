@@ -620,6 +620,8 @@ margin: 0 auto;
 text-transform: uppercase;
 }
 
+
+
 .landing-page3 .landing-menu.OP_3b-collage h1:hover {
 
 		text-shadow: -1px -1px 0px var(--black), 1px -1px 0px var(--black),
@@ -627,6 +629,14 @@ text-transform: uppercase;
 		color: var(--black);
 		-webkit-text-stroke-color: var(--black);
 		-webkit-text-stroke-width: 0.095rem;
+}
+
+.landing-page3 .landing-menu.OP_3c-collage span div {
+	margin-top: 1rem;
+}
+
+.landing-page3 .landing-menu.OP_3c-collage span div a {
+	font-size: 1.15rem;
 }
 
 .landing-page3 .landing-menu.OP_3c-collage h1 {
@@ -681,6 +691,7 @@ animation: blink 1.5s ease-in-out infinite;
   transform: translateY(-20%);
   vertical-align: middle;
   background: var(--white);
+	opacity: 1;
 }
 
 .landing-page3 .landing-menu.OP_3c-collage div a::after {
@@ -947,6 +958,7 @@ animation: blink 1.5s ease-in-out infinite;
 
 .landing-page3 .landing-menu span div {
 	align-items: flex-start;
+
 }
 
 .landing-page3 .landing-menu a {
