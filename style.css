@@ -528,19 +528,20 @@ a {
 	grid-template-columns: min-content 1fr;
 }
 
-.landing-page3 .landing-menu span:not(:last-of-type) {
+.landing-page3 .landing-menu span + .divider {
 	border-bottom: 0.5rem solid var(--colour1);
 }
 
 .landing-page3 .landing-menu h1 {
 	font-size: calc(5rem + 2vw);
+	font-family: var(--menu);
 	padding: 0.25rem 2rem 0.25rem 0;
 	cursor: pointer;
 	transition: linear 0.125s;
 	letter-spacing: -5px;
 	word-spacing: 1rem;
 	width: max-content;
-	font-weight: 500;
+	font-weight: 600;
 		color: var(--black);
 
 }
@@ -554,6 +555,78 @@ a {
 		-webkit-text-stroke-width: 0.095rem;
 }
 
+
+
+.landing-page3 .landing-menu.OP_3b-collage div {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	/* mix-blend-mode: darken; */
+	justify-content: center;
+}
+
+.landing-page3 .landing-menu.OP_3b-collage span {
+	padding: 1rem;
+	width: 100%;
+	font-family: var(--body);
+display: flex;
+flex-direction: column;
+/* border: 1px solid var(--grey1); */
+/* border-radius: 24px 64px 24px 8px; */
+	/* border: 2px solid var(--colour1);
+	border-style: none none solid none; */
+}
+
+
+
+.landing-page3 .landing-menu.OP_3b-collage span:not(:last-of-type) {
+		border: 2px solid var(--colour1);
+	border-style: none none solid none;
+}
+
+.landing-page3 .landing-menu.OP_3b-collage span div {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+padding: 0.25rem 1rem 1rem 1rem;
+}
+
+.landing-page3 .landing-menu.OP_3b-collage h1 {
+	font-size: calc(5rem + 1vw);
+	font-family: var(--menu);
+margin: 0 auto;
+	padding: 0;
+	cursor: pointer;
+	transition: linear 0.125s;
+	letter-spacing: -2px;
+	word-spacing: 1rem;
+	width: max-content;
+	font-weight: 500;
+		color: var(--black);
+text-transform: uppercase;
+}
+
+.landing-page3 .landing-menu.OP_3b-collage h1:hover {
+
+		text-shadow: -1px -1px 0px var(--black), 1px -1px 0px var(--black),
+		-1px 1px 0px var(--black), 1px 1px 0px var(--black);
+		color: var(--black);
+		-webkit-text-stroke-color: var(--black);
+		-webkit-text-stroke-width: 0.095rem;
+}
+
+
+#img-test-cropped {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	/* object-fit: cover;
+	object-position: 80% 0; */
+	z-index: 2;
+	/* scale: 2.5; */
+	width: auto;
+	height: auto;
+}
 
 #img-test {
 	position: absolute;
@@ -673,7 +746,7 @@ a {
 
 .landing-page3 .landing-menu span div a:hover::before,
 .landing-page3 .landing-menu span div a:hover::after {
-	color: var(--colour2);
+	color: var(--colour1);
 }
 
 .landing-page3 .landing-menu.OP_3c #img-test {
@@ -814,6 +887,7 @@ a {
 	/* font-weight: bold; */
 	font-weight: 600;
 	/* letter-spacing: 0px; */
+	font-family: var(--body);
 }
 
 .landing-page3 .landing-menu a::first-letter {
