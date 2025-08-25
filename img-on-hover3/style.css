@@ -317,20 +317,14 @@ body {
 	/* width: min-content; */
 	width: 100%;
 	font-family: var(--body);
-	display: grid;
-	grid-template-columns: min-content auto;
+	/* display: grid;
+	grid-template-columns: min-content auto; */
 	/* border-bottom: 3px solid var(--colour1); */
 	/* border-radius: 1rem; */
 
-	/* display: flex;
-	align-items: center; */
+	display: flex;
+	align-items: center;
 	/* justify-content: center; */
-align-items: center;
-		padding: 1rem;
-	width: auto;
-	font-family: var(--body);
-/* display: flex;
-flex-direction: column; */
 }
 
 .landing-page3 .landing-menu .landing--divider {
@@ -356,15 +350,10 @@ flex-direction: column; */
 	/* flex-direction: row; */
 	/* mix-blend-mode: darken; */
 	/* justify-content: center; */
-
-	/* align-items: flex-start;
-	display: flex;
-	flex-direction: column; */
+margin-top: 1rem;
+	align-items: flex-start;
 	display: flex;
 	flex-direction: column;
-/* flex-direction: row;
-flex-wrap: wrap; */
-padding:0;
 }
 
 .landing-page3 .landing-menu div a {
@@ -377,9 +366,7 @@ padding:0;
   padding: 0 1.25rem 0 0.5rem;
   /* border: 1px solid var(--white); */
 	border: 1px solid var(--colour1);
-	text-align: left;
-	    width: fit-content;
-			z-index: 1;
+	z-index: 1;
 }
 
 .landing-page3 .landing-menu div .blink--on::before {
@@ -407,7 +394,12 @@ border: 1px solid var(--colour1);
 
 .landing-page3 .landing-menu div .blink--on:hover:before {
 
-	background: var(--colour3);
+background: radial-gradient(
+		circle,
+		var(--colour1) 0%,
+		var(--white) 50%,
+		var(--colour1) 100%
+	);
 animation: none;
 }
 
@@ -449,31 +441,23 @@ animation: none;
 
 
 .landing-page3 .landing-menu h1 {
-	font-size: calc(5rem + 2vw);
-	padding: 0 2rem;
-	cursor: pointer;
-	transition: linear 0.125s;
-	/* color: var(--white); */
-	color: var(--text-color);
-	text-transform: uppercase;
-	/* color: var(--colour1); */
-	letter-spacing: -4px;
-	word-spacing: 2rem;
-	width: max-content;
-	cursor: pointer;
-	/* text-shadow: -1px -1px 0 var(--colour1), 1px -1px 0 var(--colour1),
-		-1px 1px 0 var(--colour1), 1px 1px 0 var(--colour1); */
-	/* text-shadow: -1px -1px 0 var(--black), 1px -1px 0 var(--black),
-		-1px 1px 0 var(--black), 1px 1px 0 var(--black); */
-	font-weight: 500;
-	font-family: var(--menu);
+
+
+	font-size: calc(5rem + 3vw);
+  font-family: var(--menu);
+  padding: 0 2rem 0 0;
+  cursor: pointer;
+  transition: linear 0.125s;
+  letter-spacing: -4px;
+  word-spacing: 1rem;
+  width: max-content;
+  font-weight: 600;
+  color: var(--black);
+
+
 	margin: 0;
-	/* -webkit-text-stroke-width: 0.065rem;
-	-webkit-text-stroke-color: var(--white); */
-	transition: all 0.125s ease-in;
-text-shadow: -1px -1px 0 var(--white), 1px -1px 0 var(--white),
-		-1px 1px 0 var(--white), 1px 1px 0 var(--white);
-	z-index: 1;
+
+z-index: 1;
 }
 
 
