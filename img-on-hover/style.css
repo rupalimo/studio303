@@ -366,6 +366,7 @@ body {
   padding: 0 1.25rem 0 0.5rem;
   /* border: 1px solid var(--white); */
 	border: 1px solid var(--colour1);
+	z-index: 1;
 }
 
 .landing-page3 .landing-menu div .blink--on::before {
@@ -393,7 +394,12 @@ border: 1px solid var(--colour1);
 
 .landing-page3 .landing-menu div .blink--on:hover:before {
 
-	background: var(--colour3);
+background: radial-gradient(
+		circle,
+		var(--colour1) 0%,
+		var(--white) 50%,
+		var(--colour1) 100%
+	);
 animation: none;
 }
 
@@ -459,7 +465,7 @@ animation: none;
 	transition: all 0.125s ease-in;
 text-shadow: -1px -1px 0 var(--white), 1px -1px 0 var(--white),
 		-1px 1px 0 var(--white), 1px 1px 0 var(--white);
-
+z-index: 1;
 }
 
 
