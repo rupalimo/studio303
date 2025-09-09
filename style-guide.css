@@ -729,7 +729,7 @@ a {
 	background: #ffffff00;
 	font-family: var(--body);
 	height: 1.5rem;
-	font-size: calc(0.75rem + 0.25vw);
+	font-size: var(--font-sm);
 	font-weight: 500;
 }
 
@@ -741,7 +741,7 @@ a {
 	text-underline-offset: 3px;
 	text-decoration-thickness: 2px;
 	font-family: var(--body);
-	font-size: calc(0.75rem + 0.25vw);
+	font-size: var(--font-sm);
 }
 
 .style-guide__wrapper .form-input__search input[type='search']:focus {
@@ -792,7 +792,7 @@ a {
 	text-underline-offset: 3px;
 	text-decoration-thickness: 2px;
 	font-family: var(--body);
-	font-size: calc(0.75rem + 0.25vw);
+	font-size: var(--font-sm);
 }
 
 .style-guide__wrapper .filter__container {
@@ -925,7 +925,7 @@ a {
 	.style-guide__wrapper .tab__title,
 	.style-guide__wrapper .tab__title.tab__title--active,
 	.style-guide__wrapper .landing-menu__secondary a {
-		font-size: 1rem;
+		font-size: var(--mobile-font-sm);
 		padding: 0.5rem 1.25rem;
 		border-radius: 2rem;
 	}
@@ -933,7 +933,30 @@ a {
 		font-size: var(--mobile-font-m);
 	}
 	.style-guide__wrapper .residency__artist {
-		font-size: 1.5rem;
+		font-size: var(--mobile-font-m);
+	}
+
+	.style-guide__wrapper .section-page__title--desktop, .style-guide__wrapper .section-page__title--mobile {
+font-size: var(--mobile-font-xsm);
+	}
+
+	.style-guide__wrapper .appels__date, .style-guide__wrapper .appels__title {
+		font-size: var(--mobile-font-m);
+	}
+
+	.style-guide__wrapper .schedule__date-card {
+		font-size: var(--mobile-font-sm);
+	}
+
+	.style-guide__wrapper .link__footer1, .style-guide__wrapper .link__footer2, .style-guide__wrapper .link__contact a  {
+font-size: var(--mobile-font-xsm);
+	}
+
+	.style-guide__wrapper .schedule__date,  .style-guide__wrapper .body__title, .style-guide__wrapper .register--button, .style-guide__wrapper .bursary--button {
+		font-size: var(--mobile-font-m);
+	}
+	.style-guide__wrapper .schedule__title {
+		font-size: var(--mobile-font-xl);
 	}
 }
 
@@ -944,6 +967,7 @@ a {
 
 	.style-guide__wrapper .schedule__img {
 		width: 100%;
+		height: auto;
 	}
 
 	.style-guide__wrapper .landing-menu__primary {
