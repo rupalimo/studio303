@@ -502,23 +502,24 @@ a {
 }
 
 .style-guide__wrapper .section-page__divider--small {
-	height: 0.75rem;
+	height: 10px;
 	width: 4rem;
 	border-radius: 1rem;
 	border: 1px solid var(--colour2);
 	background: var(--colour2);
-	box-shadow: var(--white) 0px 0px 3px 2px inset;
+	box-shadow: var(--white) 0px 0px 2px 2px inset;
 }
 
 
 .style-guide__wrapper .section-page__divider--large {
 	height: auto;
-	min-height: 250px;
-	width: 0.75rem;
+	
+	min-height: 200px;
+	width: 10px;
 	border-radius: 1rem;
 	border: 1px solid var(--colour2);
 	background: var(--colour2);
-	box-shadow: var(--white) 0px 0px 3px 2px inset;
+	box-shadow: var(--white) 0px 0px 2px 2px inset;
 }
 
 .style-guide__wrapper .section-page__nav {
