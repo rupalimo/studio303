@@ -1756,6 +1756,101 @@ top-menu2 footer {
 	width: 100%;
 }
 
+.footer .newsletter {
+	text-align: center;
+	display: block;
+	width: 100%;
+	padding: 1rem 0;
+	border-top: 1px dashed var(--colour1);
+}
+.footer .newsletter button {
+outline: none;
+  border: 1px solid var(--white);
+  border-style: none none solid none;
+  width: auto;
+  cursor: pointer;
+  padding: 0;
+  background: #ffffff00;
+  font-family: var(--body);
+  height: 1.5rem;
+  font-size: var(--font-xsm);
+  font-weight: 500;
+}
+
+
+.footer .footer-links {
+	background: var(--colour1);
+	padding: 2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	
+}
+.footer .footer-links .home {
+	width: 30vw;
+}
+
+.footer .footer-links .home h1 {
+	font-size: 1.5rem;
+  margin: 0;
+	font-family: var(--body);
+	font-weight: 500;
+}
+
+.footer .footer-links .home em {
+	font-style: normal;
+	font-weight: 700;
+}
+
+.footer .footer-links .home p {
+	margin: 1rem 0;	
+}
+
+.footer .footer-links nav {
+	margin: 1rem 0;
+	display: inline-flex;
+
+}
+
+
+.footer .footer-links nav a {
+
+margin-right: 1rem;
+font-family: var(--body);
+
+  font-size: var(--font-xsm);
+  border-radius: 2px;
+  text-decoration: underline;
+    text-decoration-thickness: auto;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
+  font-weight: 500;
+}
+
+.footer .footer-links span:nth-of-type(2) p {
+	font-size: var(--font-xsm);
+}
+
+.footer .footer-links span:nth-of-type(2) p:nth-of-type(2), .footer .footer-links span:nth-of-type(3) li:first-of-type, .footer .footer-links span:nth-of-type(4) li:first-of-type, .footer .footer-links span:nth-of-type(5) li {
+	margin-bottom: 1rem;
+
+}
+
+.footer .footer-links span:nth-of-type(3) li:first-of-type, .footer .footer-links span:nth-of-type(4) li:first-of-type, .footer .footer-links span:nth-of-type(5) li {
+
+text-decoration: underline;
+    text-decoration-thickness: auto;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
+  font-weight: 500;
+}
+
+.footer .footer-links ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
 .sticky-scroll {
 	position: fixed;
 	right: 1rem;
