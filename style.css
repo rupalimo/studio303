@@ -41,7 +41,6 @@
 	--schedule1: 'RobotoCon-Thin', 'Arial Narrow', serif;
 	--schedule2: 'RobotoCon-Reg', 'Arial Narrow', serif;
 	--schedule3: 'RobotoCon-Med', 'Arial Narrow', serif;
-	--font-size-sm: clamp(0.5rem, 0.45vi + 0.39rem, 0.75rem);
 	--black: #0f0f0f;
 	--grey1: #8c8c8c;
 	--grey2: #b0b0b0;
@@ -49,20 +48,19 @@
 	--colour1: #a6ff00;
 	--colour2: #ffa126;
 	--colour3: #fff200;
-	--yellow1: #fff200;
-	--yellow2: #fff98b;
-	--yellow3: #eee986;
-	--green1: #a6ff00;
-	--green2: #deffa0;
-	--green3: #d3f19c;
-	--blue1: #57fff4;
-	--blue2: #b9fffa;
-	--blue3: #5ce3fb;
-	--orange1: #ffa126;
-	--orange2: #ffba66;
-	--orange3: #ebaa5c;
+	--font-xxl: calc(5rem + 3vw);
+  --font-xl: calc(2.25rem + 1vw);
+  --font-l: calc(1.25rem + 1vw);
+  --font-m: calc(0.5rem + 1vw);
+  --font-sm: 1rem;
+  --font-xsm: calc(0.75rem + 0.25vw);
+  --font-xxsm: calc(0.5rem + 0.25vw);
+  --mobile-font-xxl: 5rem;
+  --mobile-font-xl: 2.5rem;
+  --mobile-font-l: 2rem;
+  --mobile-font-m: 1.5rem;
+  --mobile-font-sm: 1rem;
 	--fade-in-effect: fadeIn 1s;
-	--font-size-sm: clamp(0.5rem, 0.45vi + 0.39rem, 0.75rem);
 	font-size: 16px;
 	font-family: var(--body-font);
 	color: var(--text-color);
@@ -713,6 +711,44 @@ text-transform: capitalize;
 		var(--colour1) 50%,
 		var(--white) 100%
 	);
+}
+
+.landing-page-50-50 {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	margin: 4rem 1rem;
+}
+
+.preview--contenu {
+	width: 50%;
+}
+
+.preview--contenu h2::before {
+	content: '';
+  width: 0.75rem;
+  height: 0.75rem;
+  background: var(--colour1);
+  border-radius: 1rem;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.preview--contenu h2 {
+	font-family: var(--body);
+  font-weight: 600;
+  font-size: var(--font-m);
+}
+
+.preview--contenu img
+
+.preview--workshops {
+	width: 50%;
+}
+
+.preview--events {
+	width: 100%;
 }
 
 #img-test-cropped {
