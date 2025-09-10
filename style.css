@@ -718,14 +718,25 @@ text-transform: capitalize;
 	flex-direction: row;
 	flex-wrap: wrap;
 	width: 100%;
-	margin: 4rem 1rem;
+	padding: 4rem 1rem;
 }
 
-.preview--contenu {
+.preview--contenu, 
+.preview--workshops, 
+.preview--events {
+	padding: 1rem 1rem 4rem 1rem;
+}
+
+.preview--contenu, 
+.preview--workshops {
 	width: 50%;
 }
 
-.preview--contenu h2::before {
+.preview--events {
+	width: 100%;
+}
+
+.landing-page-50-50 h2::before {
 	content: '';
   width: 0.75rem;
   height: 0.75rem;
@@ -735,13 +746,62 @@ text-transform: capitalize;
   margin-right: 0.5rem;
 }
 
-.preview--contenu h2 {
+.landing-page-50-50 h2 {
 	font-family: var(--body);
   font-weight: 600;
   font-size: var(--font-m);
 }
 
-.preview--contenu img
+.preview--contenu img, .preview--events img {
+	width: 100%;
+		padding: 1rem 2rem;
+	height: auto;
+}
+
+.preview--contenu  h3  {
+	font-size: var(--font-m);
+}
+
+.preview--contenu  h3, .preview--events h4 {
+		margin: 0;
+		padding: 0 1rem;
+}
+
+.preview--contenu h3:first-of-type, .preview--events h4:first-of-type {
+	font-family: var(--schedule2);
+  font-weight: 200;
+}
+
+.preview--events h4 {
+	font-size: var(--font-sm);
+}
+
+.preview--contenu h3 + h3, .preview--events h4 + h4{
+font-family: var(--schedule3);
+}
+
+.preview--contenu p  {
+font-family: var(--body);
+  color: var(--black);
+  font-size: var(--font-sm);
+	padding: 0 1rem;
+}
+
+.preview--contenu a {
+font-size: var(--font-xsm);
+  text-decoration: none;
+  font-family: var(--body);
+  font-weight: 600;
+  color: var(--grey1);
+  text-decoration: underline;
+    text-decoration-color: currentcolor;
+    text-decoration-thickness: auto;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
+  text-decoration-color: var(--colour1);
+  text-transform: uppercase;
+	padding: 0 1rem;
+}
 
 .preview--workshops {
 	width: 50%;
@@ -749,6 +809,28 @@ text-transform: capitalize;
 
 .preview--events {
 	width: 100%;
+}
+
+.preview--events span {
+		display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+
+.preview--events div:nth-of-type(even) { 
+width: 0.75rem;
+height: auto;
+  min-height: 250px;
+  width: 0.75rem;
+  border-radius: 1rem;
+  border: 1px solid var(--colour2);
+  background: var(--colour2);
+  box-shadow: var(--white) 0px 0px 3px 2px inset;
+}
+
+.preview--events div:nth-of-type(odd) { 
+width: calc((100% / 5) - 1rem);
 }
 
 #img-test-cropped {

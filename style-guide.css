@@ -512,7 +512,7 @@ a {
 
 
 .style-guide__wrapper .section-page__divider--large {
-	height: 100%;
+	height: auto;
 	min-height: 250px;
 	width: 0.75rem;
 	border-radius: 1rem;
