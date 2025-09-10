@@ -52,13 +52,14 @@
 	--font-l: calc(1.25rem + 1vw);
 	--font-m: calc(0.5rem + 1vw);
 	--font-sm: 1rem;
-	--font-xsm: calc(0.5rem + 0.25vw);
+	--font-xsm: calc(0.75rem + 0.25vw);
+	--font-xxsm: calc(0.5rem + 0.25vw);
 	--mobile-font-xxl: 5rem;
 	--mobile-font-xl: 2.5rem;
 	--mobile-font-l: 2rem;
 	--mobile-font-m: 1.5rem;
 	--mobile-font-sm: 1rem;
-	--mobile-font-xsm: 0.85rem;
+	
 	--fade-in-effect: fadeIn 1s;
 	font-size: 16px;
 	font-family: var(--body-font);
@@ -364,7 +365,7 @@ a {
 	margin: 0 1rem 0 0;
 	color: var(--grey1);
 	border-bottom: 1px solid var(--colour1);
-	font-size: var(--font-sm);
+	font-size: var(--font-xsm);
 	font-family: var(--body);
 	width: fit-content;
 	width: -moz-fit-content;
@@ -379,7 +380,7 @@ a {
 	font-family: var(--body);
 	margin: 0;
 	text-align: right;
-	font-size: 0.65rem;
+	font-size: var(--font-xxsm);
 	color: var(--grey1);
 }
 
@@ -472,7 +473,7 @@ a {
 	margin: 0 1rem 0 0;
 	color: var(--grey1);
 	border-bottom: 1px solid var(--colour1);
-	font-size: var(--font-sm);
+	font-size: var(--font-xsm);
 	font-family: var(--body);
 	width: fit-content;
 	width: -moz-fit-content;
@@ -503,6 +504,17 @@ a {
 .style-guide__wrapper .section-page__divider--small {
 	height: 0.75rem;
 	width: 4rem;
+	border-radius: 1rem;
+	border: 1px solid var(--colour2);
+	background: var(--colour2);
+	box-shadow: var(--white) 0px 0px 3px 2px inset;
+}
+
+
+.style-guide__wrapper .section-page__divider--large {
+	height: 100%;
+	min-height: 250px;
+	width: 0.75rem;
 	border-radius: 1rem;
 	border: 1px solid var(--colour2);
 	background: var(--colour2);
@@ -610,7 +622,7 @@ a {
 .style-guide__wrapper .link__contact a {
 	font-family: var(--body);
 	margin-right: 1rem;
-	font-size: var(--font-sm);
+	font-size: var(--font-xsm);
 	border-radius: 2px;
 	text-decoration: underline;
 	text-underline-offset: 3px;
@@ -619,12 +631,53 @@ a {
 }
 
 .style-guide__wrapper .link__inline {
-	/* font-size: calc(0.75rem + 0.25vw); */
-	font-size: inherit;
+	font-size: var(--font-xsm);
 	text-decoration: none;
 	font-family: var(--body);
-	font-weight: bold;
+	font-weight: 600;
 	color: var(--grey1);
+	text-decoration: underline;
+	text-underline-offset: 3px;
+	text-decoration-thickness: 2px;
+	text-decoration-color: var(--colour1);
+	text-transform: uppercase;
+}
+
+.style-guide__wrapper .landing-page__preview--title {
+	font-family: var(--body);
+	font-weight: 600;
+	font-size: var(--font-m);
+}
+
+.style-guide__wrapper .landing-page__preview--title::first-letter {
+	text-transform: capitalize;
+}
+
+.style-guide__wrapper .landing-page__preview--title::before {
+	content: '';
+	width: 0.75rem;
+	height: 0.75rem;
+	background: var(--colour1);
+	border-radius: 1rem;
+	display: inline-block;
+	margin-right: 0.5rem;
+}
+
+.style-guide__wrapper .landing-page__schedule--date1, .style-guide__wrapper .landing-page__schedule--title1 {
+	font-size: var(--font-m);
+}
+
+.style-guide__wrapper .landing-page__schedule--date2, .style-guide__wrapper .landing-page__schedule--title2 {
+	font-size: var(--font-sm);
+}
+
+.style-guide__wrapper .landing-page__schedule--date1, .style-guide__wrapper .landing-page__schedule--date2 {
+	font-family: var(--schedule2);
+	font-weight: 200;
+}
+
+.style-guide__wrapper .landing-page__schedule--title1, .style-guide__wrapper .landing-page__schedule--title2 {
+		font-family: var(--schedule3);
 }
 
 .style-guide__wrapper .appels__content {
@@ -650,24 +703,6 @@ a {
 	border-top: 1px dashed var(--colour2);
 }
 
-.style-guide__wrapper .link__inline::before,
-.style-guide__wrapper .link__inline::after {
-	font-family: var(--body);
-	font-weight: bold;
-	color: var(--colour1);
-	margin: 0 2px;
-}
-
-.style-guide__wrapper .link__inline::before {
-	content: '\005B';
-	margin-right: 2px;
-}
-
-.style-guide__wrapper .link__inline::after {
-	content: '\005D';
-	margin-left: 2px;
-}
-
 .style-guide__wrapper .newsletter {
 	width: 100%;
 }
@@ -677,7 +712,7 @@ a {
 	font-family: var(--body);
 	color: var(--black);
 	text-align: center;
-
+font-size: var(--font-sm);
 	padding: 1rem;
 	margin: 0;
 	border-top: 1px dashed var(--colour1);
@@ -729,7 +764,7 @@ a {
 	background: #ffffff00;
 	font-family: var(--body);
 	height: 1.5rem;
-	font-size: var(--font-sm);
+	font-size: var(--font-xsm);
 	font-weight: 500;
 }
 
@@ -741,7 +776,7 @@ a {
 	text-underline-offset: 3px;
 	text-decoration-thickness: 2px;
 	font-family: var(--body);
-	font-size: var(--font-sm);
+	font-size: var(--font-xsm);
 }
 
 .style-guide__wrapper .form-input__search input[type='search']:focus {
@@ -792,7 +827,7 @@ a {
 	text-underline-offset: 3px;
 	text-decoration-thickness: 2px;
 	font-family: var(--body);
-	font-size: var(--font-sm);
+	font-size: var(--font-xsm);
 }
 
 .style-guide__wrapper .filter__container {
@@ -936,11 +971,8 @@ a {
 		font-size: var(--mobile-font-m);
 	}
 
-	.style-guide__wrapper .section-page__title--desktop, .style-guide__wrapper .section-page__title--mobile {
-font-size: var(--mobile-font-xsm);
-	}
-
-	.style-guide__wrapper .appels__date, .style-guide__wrapper .appels__title {
+	.style-guide__wrapper .appels__date,
+	.style-guide__wrapper .appels__title {
 		font-size: var(--mobile-font-m);
 	}
 
@@ -948,16 +980,27 @@ font-size: var(--mobile-font-xsm);
 		font-size: var(--mobile-font-sm);
 	}
 
-	.style-guide__wrapper .link__footer1, .style-guide__wrapper .link__footer2, .style-guide__wrapper .link__contact a  {
-font-size: var(--mobile-font-xsm);
-	}
-
-	.style-guide__wrapper .schedule__date,  .style-guide__wrapper .body__title, .style-guide__wrapper .register--button, .style-guide__wrapper .bursary--button {
+	.style-guide__wrapper .schedule__date,
+	.style-guide__wrapper .body__title,
+	.style-guide__wrapper .register--button,
+	.style-guide__wrapper .bursary--button {
 		font-size: var(--mobile-font-m);
 	}
 	.style-guide__wrapper .schedule__title {
 		font-size: var(--mobile-font-xl);
 	}
+
+	.style-guide__wrapper .landing-page__preview--title {
+	font-size: var(--mobile-font-m);
+}
+
+.style-guide__wrapper .landing-page__preview--title::before {
+	margin-bottom: 0.125rem;
+}
+
+.style-guide__wrapper .landing-page__schedule--title1, .style-guide__wrapper .landing-page__schedule--date1 {
+	font-size: var(--mobile-font-m);
+}
 }
 
 @media (max-width: 640px) {
