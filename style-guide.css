@@ -59,7 +59,7 @@
 	--mobile-font-l: 2rem;
 	--mobile-font-m: 1.5rem;
 	--mobile-font-sm: 1rem;
-	
+
 	--fade-in-effect: fadeIn 1s;
 	font-size: 16px;
 	font-family: var(--body-font);
@@ -146,7 +146,7 @@ a {
 }
 
 .style-guide__wrapper .logo h1 {
-	font-size: 1.25rem;
+	font-size: 1.5rem;
 	margin: 0;
 }
 
@@ -155,7 +155,7 @@ a {
 }
 
 .style-guide__wrapper .logo h1 + h1 {
-	font-weight: bold;
+	font-weight: 700;
 }
 
 .style-guide__wrapper .menu-items__primary {
@@ -290,7 +290,7 @@ a {
 .style-guide__wrapper .body__para-sm {
 	font-family: var(--body);
 	color: var(--black);
-	font-size: calc(0.6rem + 0.25vw);
+	font-size: var(--font-xxsm);
 }
 
 .style-guide__wrapper .schedule__title {
@@ -958,6 +958,7 @@ font-size: var(--font-sm);
 }
 
 @media (max-width: 850px) {
+
 	.style-guide__wrapper .tab__title,
 	.style-guide__wrapper .tab__title.tab__title--active,
 	.style-guide__wrapper .landing-menu__secondary a {
