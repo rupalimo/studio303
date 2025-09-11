@@ -273,9 +273,16 @@ a {
 	);
 }
 
+.style-guide__wrapper .tab__title {
+	font-family: var(--menu);
+}
+
+.style-guide__wrapper .body__title {
+		font-family: var(--body);
+}
+
 .style-guide__wrapper .tab__title,
 .style-guide__wrapper .body__title {
-	font-family: var(--body);
 	color: var(--black);
 	font-size: var(--font-m);
 	font-weight: 400;
