@@ -188,7 +188,7 @@ body {
 
 .top-menu2 .top-menu-nav .secondary-menu a {
 	font-weight: 400;
-	/* text-decoration: underline; */
+	text-decoration: underline;
 	text-underline-offset: 3px;
 	text-decoration-thickness: 2px;
 	text-decoration-color: transparent;
@@ -355,21 +355,32 @@ a {
 	font-size: var(--font-sm);
 	font-family: var(--menu);
 	-webkit-text-stroke-width: 0;
+
+		text-decoration: underline;
+	text-underline-offset: 3px;
+	text-decoration-thickness: 2px;
+text-decoration-color: transparent;
 }
 
 .landing-page3.top-menu2 .top-menu-nav .nested-menu nav a:hover {
-	paint-order: stroke fill;
-	-webkit-text-stroke-width: calc(0.025rem + 0.015vw);
+	/* paint-order: stroke fill;
+	-webkit-text-stroke-width: calc(0.025rem + 0.015vw); */
 	color: var(--black);
-	-webkit-text-stroke-color: var(--black);
+	/* -webkit-text-stroke-color: var(--black); */
 	cursor: pointer;
-	transition: linear 0.25s;
+	/* transition: linear 0.25s; */
+
+	text-decoration: underline;
+	text-underline-offset: 3px;
+	text-decoration-thickness: 2px;
+text-decoration-color: var(--colour1);
+
 }
 
 .landing-page3.top-menu2 .top-menu-nav .nested-menu .nested-menu--active {
 	text-decoration: underline;
 	text-decoration-color: currentcolor;
-	text-decoration-thickness: auto;
+
 	text-underline-offset: 3px;
 	text-decoration-thickness: 2px;
 	text-decoration-color: var(--colour1);
