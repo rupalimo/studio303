@@ -196,6 +196,10 @@ body {
 	padding-left: 1rem;
 }
 
+.top-menu2 .top-menu-nav .secondary-menu a:hover {
+	text-decoration-color: var(--black);
+}
+
 .top-menu-nav article {
 	padding: 1rem;
 }
@@ -384,8 +388,8 @@ text-decoration-color: var(--colour1);
 	text-underline-offset: 3px;
 	text-decoration-thickness: 2px;
 	text-decoration-color: var(--colour1);
-	paint-order: stroke fill;
-	-webkit-text-stroke-width: calc(0.025rem + 0.015vw);
+	/* paint-order: stroke fill;
+	-webkit-text-stroke-width: calc(0.025rem + 0.015vw); */
 	color: var(--black);
 	cursor: default;
 }
