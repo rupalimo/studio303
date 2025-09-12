@@ -221,23 +221,39 @@ text-decoration: underline;
 	font-family: var(--menu);
 }
 
-.style-guide__wrapper .menu-items__tertiary .active {
-	font-weight: 600;
+.style-guide__wrapper .menu-items__tertiary .active,  .style-guide__wrapper .menu-items__tertiary .active:hover {
+
+
+		paint-order: stroke fill;
+	-webkit-text-stroke-width: calc(0.025rem + 0.015vw);
 	color: var(--black);
+	-webkit-text-stroke-color: var(--black);
 }
+
 
 .style-guide__wrapper .menu-items__tertiary a {
 	font-weight: 400;
 	color: var(--grey1);
 }
 
-.style-guide__wrapper .menu-items__tertiary a:first-of-type::after {
-	color: var(--black);
+.style-guide__wrapper .menu-items__tertiary a:hover {
+	paint-order: stroke fill;
+	-webkit-text-stroke-width: calc(0.025rem + 0.015vw);
+	-webkit-text-stroke-color: var(--grey1);
+}
+
+
+.style-guide__wrapper .menu-items__tertiary .active::after {
+
 	content: '/';
 	margin: 0 0.25rem;
 	text-decoration: none;
 	display: inline-block;
-	font-weight: normal;
+
+		paint-order: stroke fill;
+	-webkit-text-stroke-width: calc(0.025rem + 0.015vw);
+	color: var(--black);
+	-webkit-text-stroke-color: var(--black);
 }
 
 .style-guide__wrapper .page__title {

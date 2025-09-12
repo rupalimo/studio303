@@ -221,7 +221,10 @@ body {
 }
 
 .top-menu2 .top-menu-nav .lang a:first-child {
-	font-weight: bold;
+paint-order: stroke fill;
+	-webkit-text-stroke-width: calc(0.025rem + 0.015vw);
+	color: var(--black);
+	-webkit-text-stroke-color: var(--black);
 }
 
 .top-menu2 .top-menu-nav .lang a:first-child::after {
@@ -235,6 +238,13 @@ body {
 
 .top-menu2 .top-menu-nav .lang a + a {
 	color: var(--grey1);
+
+}
+
+.top-menu2 .top-menu-nav .lang a + a:hover  {
+paint-order: stroke fill;
+	-webkit-text-stroke-width: calc(0.025rem + 0.015vw);
+	-webkit-text-stroke-color: var(--grey1);
 }
 
 a {
