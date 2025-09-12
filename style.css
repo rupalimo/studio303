@@ -221,7 +221,7 @@ body {
 	padding: 1rem 0 1rem 1rem;
 }
 
-.top-menu2 .top-menu-nav .lang a:first-child {
+.top-menu2 .top-menu-nav .lang a:first-child, .top-menu2 .top-menu-nav .lang a:first-child:hover {
 	paint-order: stroke fill;
 	-webkit-text-stroke-width: calc(0.025rem + 0.015vw);
 	color: var(--black);
