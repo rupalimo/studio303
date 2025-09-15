@@ -353,6 +353,18 @@ text-decoration: underline;
 	border-radius: 1rem 8rem 1rem 4rem;
 }
 
+.style-guide__wrapper .landing-page__blob {
+		width: 100%;
+		height: auto;
+}
+
+.style-guide__wrapper .landing-page__img {
+	border: 1px solid var(--white);
+	border-radius: 24px 180px 8px 72px;
+	height: 320px;
+	width: 100%;
+}
+
 .style-guide__wrapper .section__img--main {
 	border: 1px var(--white);
 	border-style: solid;

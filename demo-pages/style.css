@@ -1410,7 +1410,7 @@ text-decoration-color: var(--colour1);
 	padding: 0 1rem;
 }
 
-.section-page .listed-row .residence__item {
+.section-page .listed-row .residence__item, .section-page .listed-row .ateliers__item {
 	width: 25%;
 }
 
@@ -1420,8 +1420,8 @@ text-decoration-color: var(--colour1);
 	padding: 1rem;
 }
 
-.section-page .listed-row .residence__item {
-	padding: 1rem 2rem 2rem 2rem;
+.section-page .listed-row .residence__item, .section-page .listed-row .ateliers__item {
+padding: 1rem 1rem 2rem 1rem;
 	cursor: pointer;
 }
 
@@ -1548,12 +1548,20 @@ text-decoration-color: var(--colour1);
 }
 
 .section-page .listed-row .residence__item img {
+	height: auto;
+}
+
+.section-page .listed-row .residence__item img, .section-page .listed-row .ateliers__item img {
 	border-radius: 0.5rem 4rem 0.5rem 1.75rem;
 	border: 3px var(--colour1);
 	border-style: none solid;
-	height: auto;
+
 	width: 100%;
 	margin-bottom: 0.25rem;
+}
+
+.section-page .listed-row .ateliers__item img {
+height: 136px;
 }
 
 .section-page .listed-row .residence__item h2,
